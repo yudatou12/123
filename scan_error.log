@@ -1,0 +1,1680 @@
+2022/11/18 16:23:33 read user rule file ok: 0
+2022/11/18 16:23:33 Version: v2.0.316 beta
+2022/11/18 16:23:34 API Server listen at  127.0.0.1:8361
+2022/11/18 16:23:34 127.0.0.1:49389   GET   /api/v1/live  
+2022/11/18 16:23:34 127.0.0.1:49390   POST   /api/v1/setEnvi  
+2022/11/18 16:23:35 127.0.0.1:49391   POST   /api/v1/getTasks  
+2022/11/18 16:23:35 127.0.0.1:49392   GET   /api/v1/getEnvi?  
+2022/11/18 16:23:35 [DEBUG] get adapter of device \Device\NPF_{63AC91AA-CFBC-4C12-8CC1-421A7A7BC109}
+2022/11/18 16:23:35 [DEBUG] devices:  [{\Device\NPF_{75FE7905-5B61-4278-92EF-44DB5D67D878} WAN Miniport (Network Monitor) 22 []} {\Device\NPF_{E7A1F4A0-68DD-438C-9C55-13161D3F1D15} WAN Miniport (IPv6) 22 []} {\Device\NPF_{9301C35E-B939-4DC3-A84F-719FCDA66664} WAN Miniport (IP) 22 []} {\Device\NPF_{F79D8093-7FC3-4176-B70B-01897334A903} Bluetooth Device (Personal Area Network) 46 [{169.254.158.41 ffff0000 169.254.255.255 <nil>} {fe80::c249:516e:35fb:591 ffffffffffffffff0000000000000000 fe80::ffff:ffff:ffff:ffff <nil>}]} {\Device\NPF_{FDAC2D6A-5940-4899-9583-061E19D53EB4} VMware Virtual Ethernet Adapter for VMnet8 22 [{192.168.227.1 ffffff00 192.168.227.255 <nil>} {fe80::8a0d:35d:4065:d4e2 ffffffffffffffff0000000000000000 fe80::ffff:ffff:ffff:ffff <nil>}]} {\Device\NPF_{94658046-B0DD-4939-B97B-42ADE60E922D} VMware Virtual Ethernet Adapter for VMnet1 22 [{192.168.74.1 ffffff00 192.168.74.255 <nil>} {fe80::c6bf:220d:e1bf:6a4e ffffffffffffffff0000000000000000 fe80::ffff:ffff:ffff:ffff <nil>}]} {\Device\NPF_{BDD6BE59-A993-413C-8A7F-138637E5B27E} Microsoft Wi-Fi Direct Virtual Adapter #2 46 [{169.254.127.231 ffff0000 169.254.255.255 <nil>} {fe80::5871:e053:1b82:c732 ffffffffffffffff0000000000000000 fe80::ffff:ffff:ffff:ffff <nil>}]} {\Device\NPF_{B7BF96FA-BC87-4F99-881A-DAA17A82D2AE} Microsoft Wi-Fi Direct Virtual Adapter 46 [{169.254.37.137 ffff0000 169.254.255.255 <nil>} {fe80::d8a6:4f1f:82f:8a5b ffffffffffffffff0000000000000000 fe80::ffff:ffff:ffff:ffff <nil>}]} {\Device\NPF_{FC39AAEA-024E-43E8-B79F-AB71667207B4} Intel(R) Wi-Fi 6E AX211 160MHz 46 [{169.254.81.228 ffff0000 169.254.255.255 <nil>} {fe80::c9fe:e5f2:8253:187f ffffffffffffffff0000000000000000 fe80::ffff:ffff:ffff:ffff <nil>}]} {\Device\NPF_{63AC91AA-CFBC-4C12-8CC1-421A7A7BC109} Realtek USB GbE Family Controller #2 22 [{192.168.3.165 ffffff00 192.168.3.255 <nil>} {fe80::7f17:87eb:10b6:f113 ffffffffffffffff0000000000000000 fe80::ffff:ffff:ffff:ffff <nil>} {2408:8409:24a0:4c74:5156:facd:afdb:c850 ffffffffffffffffffffffffffffffff 2408:8409:24a0:4c74:5156:facd:afdb:c850 <nil>} {2408:8409:24a0:4c74:2d2c::22b1 ffffffffffffffffffffffffffffffff 2408:8409:24a0:4c74:2d2c::22b1 <nil>} {2408:8409:24a0:4c74:174b:7b6:4401:8719 ffffffffffffffff0000000000000000 2408:8409:24a0:4c74:ffff:ffff:ffff:ffff <nil>}]} {\Device\NPF_Loopback Adapter for loopback traffic capture 55 [{::1 ffffffffffffffffffffffffffffffff <nil> <nil>} {127.0.0.1 ff000000 <nil> <nil>}]} {\Device\NPF_{611B53DD-0F3B-4A22-A778-22DBE49C8C85} QMTAP Adapter V9 38 [{169.254.231.45 ffff0000 169.254.255.255 <nil>} {fe80::f3f2:dc8:914e:876c ffffffffffffffff0000000000000000 fe80::ffff:ffff:ffff:ffff <nil>}]}]
+2022/11/18 16:23:35 [DEBUG] device name is not match: \Device\NPF_{75FE7905-5B61-4278-92EF-44DB5D67D878} != \Device\NPF_{63AC91AA-CFBC-4C12-8CC1-421A7A7BC109}
+2022/11/18 16:23:35 [DEBUG] device name is not match: \Device\NPF_{E7A1F4A0-68DD-438C-9C55-13161D3F1D15} != \Device\NPF_{63AC91AA-CFBC-4C12-8CC1-421A7A7BC109}
+2022/11/18 16:23:35 [DEBUG] device name is not match: \Device\NPF_{9301C35E-B939-4DC3-A84F-719FCDA66664} != \Device\NPF_{63AC91AA-CFBC-4C12-8CC1-421A7A7BC109}
+2022/11/18 16:23:35 [DEBUG] device name is not match: \Device\NPF_{F79D8093-7FC3-4176-B70B-01897334A903} != \Device\NPF_{63AC91AA-CFBC-4C12-8CC1-421A7A7BC109}
+2022/11/18 16:23:35 [DEBUG] device name is not match: \Device\NPF_{FDAC2D6A-5940-4899-9583-061E19D53EB4} != \Device\NPF_{63AC91AA-CFBC-4C12-8CC1-421A7A7BC109}
+2022/11/18 16:23:35 [DEBUG] device name is not match: \Device\NPF_{94658046-B0DD-4939-B97B-42ADE60E922D} != \Device\NPF_{63AC91AA-CFBC-4C12-8CC1-421A7A7BC109}
+2022/11/18 16:23:35 [DEBUG] device name is not match: \Device\NPF_{BDD6BE59-A993-413C-8A7F-138637E5B27E} != \Device\NPF_{63AC91AA-CFBC-4C12-8CC1-421A7A7BC109}
+2022/11/18 16:23:35 [DEBUG] device name is not match: \Device\NPF_{B7BF96FA-BC87-4F99-881A-DAA17A82D2AE} != \Device\NPF_{63AC91AA-CFBC-4C12-8CC1-421A7A7BC109}
+2022/11/18 16:23:35 [DEBUG] device name is not match: \Device\NPF_{FC39AAEA-024E-43E8-B79F-AB71667207B4} != \Device\NPF_{63AC91AA-CFBC-4C12-8CC1-421A7A7BC109}
+2022/11/18 16:23:35 [DEBUG] getGatewayMac: \Device\NPF_{63AC91AA-CFBC-4C12-8CC1-421A7A7BC109} 0.0.0.0
+2022/11/18 16:23:36 find router mac is  40:8c:1f:55:2d:2c
+2022/11/18 16:23:36 [DEBUG] fetch mac address: \Device\NPF_{63AC91AA-CFBC-4C12-8CC1-421A7A7BC109} 40:8c:1f:55:2d:2c
+2022/11/18 16:23:36 [DEBUG] close pcap handler for getGatewayMac
+2022/11/18 16:23:38 127.0.0.1:49395   GET   /api/v1/getEnvi?field=licenseInfo  
+2022/11/18 16:23:39 127.0.0.1:49400   POST   /api/v1/getStatisticsData  
+2022/11/18 16:23:43 127.0.0.1:49403   POST   /api/v1/getStatisticsData  
+2022/11/18 16:23:43 127.0.0.1:49404   POST   /api/v1/assetSearch  
+2022/11/18 16:23:43 127.0.0.1:49405   POST   /api/v1/getValueCategory  
+2022/11/18 16:23:46 127.0.0.1:49406   POST   /api/v1/vulnerabilityStatisticsData  
+2022/11/18 16:23:46 127.0.0.1:49407   POST   /api/v1/vulnerabilitySearch  
+2022/11/18 16:23:54 127.0.0.1:49673   POST   /api/v1/assetSearch  
+2022/11/18 16:23:54 127.0.0.1:49672   POST   /api/v1/getPOCInfo  
+2022/11/18 16:29:37 127.0.0.1:49995   POST   /api/v1/vulnerabilityStatisticsData  
+2022/11/18 16:29:37 127.0.0.1:49996   POST   /api/v1/vulnerabilitySearch  
+2022/11/18 16:29:39 127.0.0.1:49999   POST   /api/v1/getPOCInfo  
+2022/11/18 16:29:39 127.0.0.1:50001   POST   /api/v1/assetSearch  
+2022/11/18 16:32:58 127.0.0.1:50127   POST   /api/v1/vulnerabilityStatisticsData  
+2022/11/18 16:32:58 127.0.0.1:50128   POST   /api/v1/vulnerabilitySearch  
+2022/11/18 16:33:06 127.0.0.1:50134   POST   /api/v1/vulnerabilitySearch  
+2022/11/18 16:33:09 127.0.0.1:50136   POST   /api/v1/vulnerabilitySearch  
+2022/11/18 16:33:11 127.0.0.1:50138   POST   /api/v1/getStatisticsData  
+2022/11/18 16:33:31 127.0.0.1:50154   POST   /api/v1/getStatisticsData  
+2022/11/18 16:33:31 127.0.0.1:50156   POST   /api/v1/getValueCategory  
+2022/11/18 16:33:31 127.0.0.1:50155   POST   /api/v1/assetSearch  
+2022/11/18 16:34:07 127.0.0.1:50178   POST   /api/v1/assetSearch  
+2022/11/18 16:34:37 127.0.0.1:50189   POST   /api/v1/getStatisticsData  
+2022/11/18 16:35:27 127.0.0.1:50327   POST   /api/v1/resumeScan  
+2022/11/18 16:35:27 scan  7,11,13,15,17,19,20,21,22,23,25,26,30,31,32,36,37,38,43,49,51,53,U:53,U:67,67,U:69,70,79,80,U:80,81,82,83,84,85,86,87,U:88,88,89,98,102,104,110,111,U:111,113,U:113,119,121,U:123,135,U:137,138,139,143,U:161,U:162,175,U:177,179,199,211,264,280,311,389,U:391,U:427,443,U:443,444,445,449,465,500,U:500,502,503,505,512,515,U:520,U:523,540,548,554,564,587,620,U:623,U:626,631,636,646,666,U:705,771,777,789,800,801,808,U:853,873,876,880,888,898,900,901,902,990,992,993,994,995,999,1000,1010,1022,1023,1024,1025,1026,1027,U:1027,1042,1080,1099,1177,1194,U:1194,1200,1201,1212,1214,1234,1241,1248,1260,1290,1302,1311,1314,1344,1389,1400,1433,U:1434,1443,1471,1494,1503,1505,U:1505,1515,1521,1554,1588,U:1604,1610,U:1645,U:1701,1720,1723,1741,1777,U:1812,1830,1863,1880,1883,U:1900,1901,1911,1935,1947,1962,1967,1991,U:1993,2000,2001,2002,2010,2020,2022,2030,2049,2051,2052,2053,2055,2064,2077,2080,2082,U:2083,2083,2086,2087,U:2094,2095,2096,2121,U:2123,U:2152,2154,2160,2181,2222,2223,2252,2306,2323,2332,U:2362,2375,2376,2379,2396,2401,2404,2406,2424,U:2424,U:2425,U:2427,2443,2455,2480,2501,2525,2600,2601,2604,2628,U:2638,2715,2809,2869,3000,3001,3002,3005,3050,3052,3075,3097,3128,3260,3280,U:3283,3288,3299,3306,3307,3310,3311,3312,3333,U:3333,3337,3352,3372,3388,3389,3390,U:3391,3443,3460,U:3478,3520,3522,3523,3524,3525,3528,3531,3541,3542,3567,U:3671,3689,3690,U:3702,3749,3780,U:3784,3790,4000,4022,4040,U:4050,4063,4064,U:4070,4155,4200,4300,4369,4430,4433,4440,4443,4444,U:4500,4505,4506,4567,4660,4664,4711,4712,4730,4782,4786,U:4800,4840,4842,4848,4880,4911,4949,5000,U:5000,5001,U:5001,5002,U:5002,5003,5004,U:5004,5005,U:5005,U:5006,5006,5007,U:5007,5008,U:5008,5009,5010,5038,U:5050,5050,5051,U:5060,5060,5061,U:5061,5080,5084,U:5093,U:5094,U:5095,5111,5222,5258,5269,5280,U:5351,U:5353,5357,5400,U:5405,5427,5432,5443,5550,U:5554,5555,5560,5577,5598,5631,U:5632,5672,U:5673,5678,U:5683,5800,5801,5802,5820,5900,5901,5902,5903,5938,5984,5985,5986,6000,6001,6002,U:6002,U:6003,6003,6004,6005,6006,U:6006,6007,6008,6009,6010,6060,U:6060,6068,6080,6082,6103,6346,6363,6379,6443,6488,U:6502,6544,6560,6565,6581,6588,6590,6600,6664,6665,6666,6667,6668,6669,6697,6699,6780,6782,6868,U:6881,U:6969,6998,7000,U:7000,7001,U:7001,7002,7003,U:7003,7004,7005,U:7005,7007,7010,7014,7070,7071,7077,7080,7100,7144,7145,7170,7171,7180,7187,7199,7272,7288,7401,7402,7443,7474,7479,7493,7500,7537,7547,7548,7634,7657,7676,7776,7777,7778,7779,7780,7788,7911,8000,8001,8002,U:8002,8003,8004,8005,8006,8007,8008,8009,8010,8020,8025,8030,8032,8040,8058,8060,8069,8080,8081,8082,8083,8084,8085,8086,8087,8088,8089,8090,8091,8092,8093,8094,8095,8096,8097,8098,8099,8111,8112,8118,8123,8125,8126,8129,8138,8139,8140,8159,8161,8181,8182,8194,8200,8222,8291,8332,8333,8334,8351,8377,8378,8388,8443,8444,8480,8500,8529,8545,8546,8554,8567,U:8600,8649,8686,8688,8765,8800,8834,8880,8881,8882,8883,8884,8885,8886,8887,8888,U:8888,8889,8890,8899,8983,8999,9000,U:9000,9001,9002,9003,9004,9005,9006,9007,9008,9009,9010,U:9011,9030,9042,9050,9051,9080,9083,9090,9091,U:9100,9100,9151,9191,9200,9229,9292,9295,9300,9306,9333,9334,9418,9443,9444,9446,9527,9530,9595,U:9600,9653,9668,9700,9711,9801,9864,9869,9870,9876,9943,9944,9981,9997,9999,10000,U:10000,10001,U:10001,10003,10005,10030,10035,10162,10243,10250,10255,10332,10333,10389,10443,10554,11001,11211,U:11211,11300,11310,11371,11965,12000,12300,12345,12999,13579,13666,13720,13722,14000,14147,14265,14443,14534,15000,16000,16010,16030,16922,16923,16992,16993,17000,U:17185,17988,18000,18001,18080,18081,18086,18245,18246,18264,19150,19888,19999,U:20000,20000,20005,20332,20547,20880,22105,22222,22335,23023,23424,25000,25010,25105,25565,26214,26470,U:27015,27015,27016,27017,28017,28080,U:28784,29876,29999,30001,30005,U:30310,U:30311,U:30312,U:30313,U:30718,31337,32400,U:32412,U:32414,U:32768,32770,32771,32773,33338,U:33848,33890,34567,34599,U:34962,U:34963,U:34964,U:37020,37215,37777,U:37810,40000,40001,41795,42873,44158,44818,U:44818,45554,U:47808,U:48899,49151,49152,49153,49154,49155,49156,49157,49158,49159,49664,49665,49666,49667,49668,49669,49670,49671,49672,49673,49674,50000,50050,50060,50070,50075,50090,50100,50111,51106,52869,U:53413,55442,55553,55555,U:59110,60001,60010,60030,60443,61613,61616,62078,64738,U:64738 192.168.3.0/24
+2022/11/18 16:35:27 127.0.0.1:50328   POST   /api/v1/getProgress  
+2022/11/18 16:35:27 start port scanner: totalSize: 206080, rate: 100, connectionSize: 100, connectTimeout: 6s, retryTimes: 0, Random: true, Seed: 1668757270610032700, ScanOffset: 206080, ScanICMP: false, CheckAliveMode: 0
+2022/11/18 16:35:27 pcap version: Npcap version 1.71, based on libpcap version 1.10.2-PRE-GIT
+2022/11/18 16:35:27 found device from route table for 192.168.3.255: \Device\NPF_{63AC91AA-CFBC-4C12-8CC1-421A7A7BC109}
+2022/11/18 16:35:27 [DEBUG] get adapter of device \Device\NPF_{63AC91AA-CFBC-4C12-8CC1-421A7A7BC109}
+2022/11/18 16:35:27 [DEBUG] devices:  [{\Device\NPF_{75FE7905-5B61-4278-92EF-44DB5D67D878} WAN Miniport (Network Monitor) 22 []} {\Device\NPF_{E7A1F4A0-68DD-438C-9C55-13161D3F1D15} WAN Miniport (IPv6) 22 []} {\Device\NPF_{9301C35E-B939-4DC3-A84F-719FCDA66664} WAN Miniport (IP) 22 []} {\Device\NPF_{F79D8093-7FC3-4176-B70B-01897334A903} Bluetooth Device (Personal Area Network) 46 [{169.254.158.41 ffff0000 169.254.255.255 <nil>} {fe80::c249:516e:35fb:591 ffffffffffffffff0000000000000000 fe80::ffff:ffff:ffff:ffff <nil>}]} {\Device\NPF_{FDAC2D6A-5940-4899-9583-061E19D53EB4} VMware Virtual Ethernet Adapter for VMnet8 22 [{192.168.227.1 ffffff00 192.168.227.255 <nil>} {fe80::8a0d:35d:4065:d4e2 ffffffffffffffff0000000000000000 fe80::ffff:ffff:ffff:ffff <nil>}]} {\Device\NPF_{94658046-B0DD-4939-B97B-42ADE60E922D} VMware Virtual Ethernet Adapter for VMnet1 22 [{192.168.74.1 ffffff00 192.168.74.255 <nil>} {fe80::c6bf:220d:e1bf:6a4e ffffffffffffffff0000000000000000 fe80::ffff:ffff:ffff:ffff <nil>}]} {\Device\NPF_{BDD6BE59-A993-413C-8A7F-138637E5B27E} Microsoft Wi-Fi Direct Virtual Adapter #2 46 [{169.254.127.231 ffff0000 169.254.255.255 <nil>} {fe80::5871:e053:1b82:c732 ffffffffffffffff0000000000000000 fe80::ffff:ffff:ffff:ffff <nil>}]} {\Device\NPF_{B7BF96FA-BC87-4F99-881A-DAA17A82D2AE} Microsoft Wi-Fi Direct Virtual Adapter 46 [{169.254.37.137 ffff0000 169.254.255.255 <nil>} {fe80::d8a6:4f1f:82f:8a5b ffffffffffffffff0000000000000000 fe80::ffff:ffff:ffff:ffff <nil>}]} {\Device\NPF_{FC39AAEA-024E-43E8-B79F-AB71667207B4} Intel(R) Wi-Fi 6E AX211 160MHz 46 [{169.254.81.228 ffff0000 169.254.255.255 <nil>} {fe80::c9fe:e5f2:8253:187f ffffffffffffffff0000000000000000 fe80::ffff:ffff:ffff:ffff <nil>}]} {\Device\NPF_{63AC91AA-CFBC-4C12-8CC1-421A7A7BC109} Realtek USB GbE Family Controller #2 22 [{192.168.3.165 ffffff00 192.168.3.255 <nil>} {fe80::7f17:87eb:10b6:f113 ffffffffffffffff0000000000000000 fe80::ffff:ffff:ffff:ffff <nil>} {2408:8409:24a0:4c74:5156:facd:afdb:c850 ffffffffffffffffffffffffffffffff 2408:8409:24a0:4c74:5156:facd:afdb:c850 <nil>} {2408:8409:24a0:4c74:2d2c::22b1 ffffffffffffffffffffffffffffffff 2408:8409:24a0:4c74:2d2c::22b1 <nil>} {2408:8409:24a0:4c74:174b:7b6:4401:8719 ffffffffffffffff0000000000000000 2408:8409:24a0:4c74:ffff:ffff:ffff:ffff <nil>}]} {\Device\NPF_Loopback Adapter for loopback traffic capture 55 [{::1 ffffffffffffffffffffffffffffffff <nil> <nil>} {127.0.0.1 ff000000 <nil> <nil>}]} {\Device\NPF_{611B53DD-0F3B-4A22-A778-22DBE49C8C85} QMTAP Adapter V9 38 [{169.254.231.45 ffff0000 169.254.255.255 <nil>} {fe80::f3f2:dc8:914e:876c ffffffffffffffff0000000000000000 fe80::ffff:ffff:ffff:ffff <nil>}]}]
+2022/11/18 16:35:27 [DEBUG] device name is not match: \Device\NPF_{75FE7905-5B61-4278-92EF-44DB5D67D878} != \Device\NPF_{63AC91AA-CFBC-4C12-8CC1-421A7A7BC109}
+2022/11/18 16:35:27 [DEBUG] device name is not match: \Device\NPF_{E7A1F4A0-68DD-438C-9C55-13161D3F1D15} != \Device\NPF_{63AC91AA-CFBC-4C12-8CC1-421A7A7BC109}
+2022/11/18 16:35:27 [DEBUG] device name is not match: \Device\NPF_{9301C35E-B939-4DC3-A84F-719FCDA66664} != \Device\NPF_{63AC91AA-CFBC-4C12-8CC1-421A7A7BC109}
+2022/11/18 16:35:27 [DEBUG] device name is not match: \Device\NPF_{F79D8093-7FC3-4176-B70B-01897334A903} != \Device\NPF_{63AC91AA-CFBC-4C12-8CC1-421A7A7BC109}
+2022/11/18 16:35:27 [DEBUG] device name is not match: \Device\NPF_{FDAC2D6A-5940-4899-9583-061E19D53EB4} != \Device\NPF_{63AC91AA-CFBC-4C12-8CC1-421A7A7BC109}
+2022/11/18 16:35:27 [DEBUG] device name is not match: \Device\NPF_{94658046-B0DD-4939-B97B-42ADE60E922D} != \Device\NPF_{63AC91AA-CFBC-4C12-8CC1-421A7A7BC109}
+2022/11/18 16:35:27 [DEBUG] device name is not match: \Device\NPF_{BDD6BE59-A993-413C-8A7F-138637E5B27E} != \Device\NPF_{63AC91AA-CFBC-4C12-8CC1-421A7A7BC109}
+2022/11/18 16:35:27 [DEBUG] device name is not match: \Device\NPF_{B7BF96FA-BC87-4F99-881A-DAA17A82D2AE} != \Device\NPF_{63AC91AA-CFBC-4C12-8CC1-421A7A7BC109}
+2022/11/18 16:35:27 [DEBUG] device name is not match: \Device\NPF_{FC39AAEA-024E-43E8-B79F-AB71667207B4} != \Device\NPF_{63AC91AA-CFBC-4C12-8CC1-421A7A7BC109}
+2022/11/18 16:35:27 [DEBUG] getGatewayMac: \Device\NPF_{63AC91AA-CFBC-4C12-8CC1-421A7A7BC109} 192.168.3.255
+2022/11/18 16:35:28 find router mac is  40:8c:1f:55:2d:2c
+2022/11/18 16:35:29 [DEBUG] fetch mac address: \Device\NPF_{63AC91AA-CFBC-4C12-8CC1-421A7A7BC109} 40:8c:1f:55:2d:2c
+2022/11/18 16:35:29 [DEBUG] close pcap handler for getGatewayMac
+2022/11/18 16:35:29 select adapter of to send packets:  &{\Device\NPF_{63AC91AA-CFBC-4C12-8CC1-421A7A7BC109} 192.168.3.165 [] {192.168.3.165 ffffff00} ffffff00 60:7d:09:2c:f2:59 Realtek USB GbE Family Controller #2 40:8c:1f:55:2d:2c}
+2022/11/18 16:35:29 routine-recv start
+2022/11/18 16:35:29 port scanner is ready
+2022/11/18 16:35:29 routine-target is about to exit since target pool is running out
+2022/11/18 16:35:29 routine-target is exit since target pool and retry pool is running out
+2022/11/18 16:35:29 start first round ARP
+2022/11/18 16:35:30 found ip-mac: 192.168.3.192 - 84:a9:38:f4:a6:c0
+2022/11/18 16:35:30 found ip-mac: 192.168.3.188 - e4:a8:df:ae:70:14
+2022/11/18 16:35:30 found ip-mac: 192.168.3.185 - 04:d4:c4:7b:e5:8b
+2022/11/18 16:35:30 found ip-mac: 192.168.3.177 - 68:f7:28:e2:78:8a
+2022/11/18 16:35:30 found ip-mac: 192.168.3.171 - 04:42:1a:a0:84:fb
+2022/11/18 16:35:30 found ip-mac: 192.168.3.170 - 98:8f:e0:66:64:9f
+2022/11/18 16:35:30 found ip-mac: 192.168.3.182 - 00:e0:4c:36:ec:af
+2022/11/18 16:35:30 found ip-mac: 192.168.3.168 - c4:70:ab:dc:32:1e
+2022/11/18 16:35:30 found ip-mac: 192.168.3.164 - 6c:24:08:e8:7f:ad
+2022/11/18 16:35:30 found ip-mac: 192.168.3.173 - dc:d9:16:88:02:f7
+2022/11/18 16:35:30 found ip-mac: 192.168.3.165 - 60:7d:09:2c:f2:59
+2022/11/18 16:35:30 found ip-mac: 192.168.3.150 - 00:4e:01:98:c4:98
+2022/11/18 16:35:30 found ip-mac: 192.168.3.148 - d8:c4:97:5d:12:92
+2022/11/18 16:35:30 found ip-mac: 192.168.3.146 - d8:c4:97:3d:f3:9f
+2022/11/18 16:35:30 found ip-mac: 192.168.3.144 - 00:e0:4c:36:19:52
+2022/11/18 16:35:30 found ip-mac: 192.168.3.143 - 00:0c:29:74:41:a2
+2022/11/18 16:35:30 found ip-mac: 192.168.3.142 - d4:93:90:07:5d:5a
+2022/11/18 16:35:30 found ip-mac: 192.168.3.141 - 80:fa:5b:63:35:a8
+2022/11/18 16:35:30 found ip-mac: 192.168.3.135 - 14:4f:d7:c3:bd:35
+2022/11/18 16:35:30 found ip-mac: 192.168.3.133 - 92:ff:5c:61:5c:7b
+2022/11/18 16:35:30 found ip-mac: 192.168.3.132 - 98:fa:9b:21:48:69
+2022/11/18 16:35:30 found ip-mac: 192.168.3.131 - 54:05:db:15:1b:12
+2022/11/18 16:35:30 found ip-mac: 192.168.3.130 - 38:f3:ab:ec:74:69
+2022/11/18 16:35:30 found ip-mac: 192.168.3.126 - e8:6a:64:bb:9c:4b
+2022/11/18 16:35:30 found ip-mac: 192.168.3.117 - a8:1e:84:18:50:eb
+2022/11/18 16:35:30 found ip-mac: 192.168.3.115 - 80:fa:5b:2d:ed:3b
+2022/11/18 16:35:30 found ip-mac: 192.168.3.114 - f4:4d:30:e1:c2:86
+2022/11/18 16:35:30 found ip-mac: 192.168.3.113 - 00:e0:4c:36:05:8e
+2022/11/18 16:35:30 found ip-mac: 192.168.3.107 - e4:a8:df:bf:cf:02
+2022/11/18 16:35:30 found ip-mac: 192.168.3.103 - 34:97:f6:53:b2:d4
+2022/11/18 16:35:30 found ip-mac: 192.168.3.101 - 30:8d:99:c2:9c:4c
+2022/11/18 16:35:30 127.0.0.1:50330   POST   /api/v1/getProgress  
+2022/11/18 16:35:30 127.0.0.1:50331   POST   /api/v1/getStatisticsData  
+2022/11/18 16:35:30 3.286s 206080/206080 (100.00% N/A left); send: 191 58.12 pkt/s (58.13 pkt/s avg); recv: 0 0.00 pkt/s (0.00 pkt/s avg)
+2022/11/18 16:35:30 routine-status is exit since scan is done
+2022/11/18 16:35:31 first round ARP done
+2022/11/18 16:35:31 found ip-mac: 192.168.3.1 - 40:8c:1f:55:2d:2c
+2022/11/18 16:35:31 GrabScannerStatistics: {0 0 0 1}
+2022/11/18 16:35:31 AppScannerStatistics: {0 0 0 1}
+2022/11/18 16:35:31 SendPacketCount: 206080 206080
+2022/11/18 16:35:32 start sending packets
+2022/11/18 16:35:32 not start another round ARP
+2022/11/18 16:35:32 routine-send out
+2022/11/18 16:35:34 127.0.0.1:50333   POST   /api/v1/getStatisticsData  
+2022/11/18 16:35:34 127.0.0.1:50332   POST   /api/v1/getProgress  
+2022/11/18 16:35:37 BasicNetworkInfoScanner out...
+2022/11/18 16:35:38 127.0.0.1:50334   POST   /api/v1/getProgress  
+2022/11/18 16:35:38 127.0.0.1:50335   POST   /api/v1/getStatisticsData  
+2022/11/18 16:35:42 127.0.0.1:50339   POST   /api/v1/getStatisticsData  
+2022/11/18 16:35:42 127.0.0.1:50338   POST   /api/v1/getProgress  
+2022/11/18 16:35:42 close pcap sender
+2022/11/18 16:35:42 routine-recv out
+2022/11/18 16:35:42 routine-pcap-sender is exit
+2022/11/18 16:35:42 done: 15.106s 206080/206080 (100.00%) send: 256; recv: 31
+2022/11/18 16:35:42 PortScanner out...
+2022/11/18 16:35:46 127.0.0.1:50345   POST   /api/v1/getStatisticsData  
+2022/11/18 16:35:46 127.0.0.1:50344   POST   /api/v1/getProgress  
+2022/11/18 16:35:47 GrabScanner out...
+2022/11/18 16:35:47 AppScanner out...
+2022/11/18 16:35:47 GrabScannerStatistics: {0 0 0 0}
+2022/11/18 16:35:47 AppScannerStatistics: {0 0 0 0}
+2022/11/18 16:35:47 finished all information, now try to find vulnerabilities...
+2022/11/18 16:35:47 scanning exp of  74CMS SQLi with Plus ajax common 1000
+2022/11/18 16:35:47 scanning exp of  74CMS SQLi with Plus weixin 1000
+2022/11/18 16:35:47 scanning exp of  ANTlabs IG3100 telnet default account 1000
+2022/11/18 16:35:47 scanning exp of  AVCON-6 download.action File Read (CNVD-2020-30193) 1000
+2022/11/18 16:35:47 scanning exp of  ActiveMQ Deserialization Vulnerability (CVE-2015-5254) 1000
+2022/11/18 16:35:47 scanning exp of  ActiveMQ Arbitrary File Write Vulnerability (CVE-2016-3088) 1000
+2022/11/18 16:35:47 scanning exp of  ActiveMQ default admin account 1000
+2022/11/18 16:35:47 scanning exp of  Alibaba canal Leakage of sensitive information 1000
+2022/11/18 16:35:47 scanning exp of  Amcrest/Dahua Unauthenticated-Audio-Streaming (CVE-2019-3948) 1000
+2022/11/18 16:35:47 scanning exp of  Apache ShardingSphere RCE(CVE-2020-1947) 1000
+2022/11/18 16:35:47 scanning exp of  Apache Druid RCE (CVE-2021-25646) 1000
+2022/11/18 16:35:47 scanning exp of  Apache Flink File Upload (CVE-2020-17518) 1000
+2022/11/18 16:35:47 scanning exp of  Apache Flink Path Traversal (CVE-2020-17519) 1000
+2022/11/18 16:35:47 scanning exp of  Apache Flink RCE 1000
+2022/11/18 16:35:47 scanning exp of  Apache NiFi Api RCE 1000
+2022/11/18 16:35:47 scanning exp of  Apache OFBiz Bypass RCE (CVE-2021-30128) 1000
+2022/11/18 16:35:47 scanning exp of  Apache OFBiz Deserialization RCE (CVE-2020-9496) 1000
+2022/11/18 16:35:47 scanning exp of  Apache OFBiz XXE File Read (CVE-2018-8033) 1000
+2022/11/18 16:35:47 scanning exp of  Apache OFBiz rmi RCE (CVE-2021-26295) 1000
+2022/11/18 16:35:47 scanning exp of  Apache SkyWalking RCE with SQLi 1000
+2022/11/18 16:35:47 scanning exp of  Apache Solr Velocity Template RCE (CVE-2019-17558) 1000
+2022/11/18 16:35:47 scanning exp of  Apache Tapestry Unserialize RCE (CVE-2021-27850) 1000
+2022/11/18 16:35:50 127.0.0.1:50416   POST   /api/v1/getStatisticsData  
+2022/11/18 16:35:50 127.0.0.1:50415   POST   /api/v1/getProgress  
+2022/11/18 16:35:54 127.0.0.1:50447   POST   /api/v1/getStatisticsData  
+2022/11/18 16:35:54 127.0.0.1:50446   POST   /api/v1/getProgress  
+2022/11/18 16:35:58 127.0.0.1:50492   POST   /api/v1/getProgress  
+2022/11/18 16:35:58 127.0.0.1:50493   POST   /api/v1/getStatisticsData  
+2022/11/18 16:36:02 127.0.0.1:50541   POST   /api/v1/getStatisticsData  
+2022/11/18 16:36:02 127.0.0.1:50540   POST   /api/v1/getProgress  
+2022/11/18 16:36:06 127.0.0.1:50551   POST   /api/v1/getStatisticsData  
+2022/11/18 16:36:06 127.0.0.1:50550   POST   /api/v1/getProgress  
+2022/11/18 16:36:10 127.0.0.1:50561   POST   /api/v1/getProgress  
+2022/11/18 16:36:10 127.0.0.1:50562   POST   /api/v1/getStatisticsData  
+2022/11/18 16:36:14 127.0.0.1:50567   POST   /api/v1/getStatisticsData  
+2022/11/18 16:36:14 127.0.0.1:50566   POST   /api/v1/getProgress  
+2022/11/18 16:36:18 127.0.0.1:50581   POST   /api/v1/getStatisticsData  
+2022/11/18 16:36:18 127.0.0.1:50580   POST   /api/v1/getProgress  
+2022/11/18 16:36:18 scanning exp of  Apache Unomi RCE (CVE-2020-13942) 1000
+2022/11/18 16:36:18 scanning exp of  AppWeb Authentication Bypass vulnerability (CVE-2018-8715) 1000
+2022/11/18 16:36:18 scanning exp of  Intellian Aptus Web RCE (CVE-2020-7980) 1000
+2022/11/18 16:36:18 scanning exp of  Arcadyan Routers Authentication Bypassing (CVE-2021-20090) 1000
+2022/11/18 16:36:18 scanning exp of  Avaya Aura Default Credentials 1000
+2022/11/18 16:36:18 scanning exp of  Apache Axis2 1.4.1 Remote Directory Traversal Vulnerability (CVE-2010-0219) 1000
+2022/11/18 16:36:18 scanning exp of  Axis2 Default Credentials Remote Code Execution (CVE-2010-0219) 1000
+2022/11/18 16:36:18 scanning exp of  Barco/AWIND OEM Presentation Platform Unauthenticated Remote Command Injection (CVE-2019-3929) 1000
+2022/11/18 16:36:18 scanning exp of  BlueKeep Microsoft Remote Desktop RCE (CVE-2019-0708) 1000
+2022/11/18 16:36:18 [ERROR] check host failed:  192.168.3.132:3389 read tcp 192.168.3.165:50582->192.168.3.132:3389: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/11/18 16:36:18 scanning exp of  Brother HL default admin account 1000
+2022/11/18 16:36:18 scanning exp of  Brother MFC default admin account 1000
+2022/11/18 16:36:18 scanning exp of  CAIMORE Wireless Router RCE 1000
+2022/11/18 16:36:18 scanning exp of  CERIO 11nbg 2.4Ghz High Power Wireless Router root shell backdoor 1000
+2022/11/18 16:36:18 scanning exp of  COMMAX Ruvie CCTV Bridge DVR Unauthorized access 1000
+2022/11/18 16:36:18 scanning exp of  ChinaTelecom sjkd camera default password 1000
+2022/11/18 16:36:18 scanning exp of  Cisco ACE 4710 Device Manager Default Credentials 1000
+2022/11/18 16:36:18 scanning exp of  Cisco ASA and FTD File Delete (CVE-2020-3187) 1000
+2022/11/18 16:36:18 scanning exp of  Cisco ASA and FTD File Read (CVE-2020-3452) 1000
+2022/11/18 16:36:18 scanning exp of  Cisco HyperFlex HX Data Platform Command Injection (CVE-2021-1498) 1000
+2022/11/18 16:36:22 127.0.0.1:50591   POST   /api/v1/getStatisticsData  
+2022/11/18 16:36:22 127.0.0.1:50590   POST   /api/v1/getProgress  
+2022/11/18 16:36:26 127.0.0.1:50604   POST   /api/v1/getProgress  
+2022/11/18 16:36:26 127.0.0.1:50605   POST   /api/v1/getStatisticsData  
+2022/11/18 16:36:30 127.0.0.1:50624   POST   /api/v1/getStatisticsData  
+2022/11/18 16:36:30 127.0.0.1:50623   POST   /api/v1/getProgress  
+2022/11/18 16:36:34 127.0.0.1:50628   POST   /api/v1/getProgress  
+2022/11/18 16:36:34 127.0.0.1:50629   POST   /api/v1/getStatisticsData  
+2022/11/18 16:36:34 scanning exp of  Cisco HyperFlex HX Data Platform File Upload (CVE-2021-1499) 1000
+2022/11/18 16:36:34 scanning exp of  Cisco HyperFlex HX Installer Python Code Injection (CVE-2021-1497) 1000
+2022/11/18 16:36:34 scanning exp of  Cisco RV320 and RV325 Routers RCE (CVE-2019-1652) 1000
+2022/11/18 16:36:34 scanning exp of  Citrix ADC RCE (CVE-2019-19781) 1000
+2022/11/18 16:36:34 scanning exp of  Citrix XenMobile Arbitrary file read (CVE-2020-8209) 1000
+2022/11/18 16:36:34 scanning exp of  Citrix Systems arbitrary file read 1000
+2022/11/18 16:36:34 scanning exp of  Clinical Browsing System login.php Boolean SQLi 1000
+2022/11/18 16:36:34 scanning exp of  ClusterEngine V4.0 login Arbitrary command execution vulnerability 1000
+2022/11/18 16:36:34 scanning exp of  ClusterEngine V4.0 sysShell RCE Arbitrary command execution vulnerability 1000
+2022/11/18 16:36:34 scanning exp of  Confluence RCE (CVE-2019-3396) 1000
+2022/11/18 16:36:34 scanning exp of  Consul Service API RCE 1000
+2022/11/18 16:36:34 scanning exp of  Coremail Information Leakage (CNVD-2019-16798) 1000
+2022/11/18 16:36:34 scanning exp of  D-Link DSL-2888A RCE (CVE-2020-24581) 1000
+2022/11/18 16:36:34 scanning exp of  D-Link Dump Credentials (CVE-2020-9376) 1000
+2022/11/18 16:36:34 scanning exp of  Multiple D-Link Routers RCE (CVE-2019-16920) 1000
+2022/11/18 16:36:34 scanning exp of  DS_Store found 1000
+2022/11/18 16:36:34 MakeRequest failed: Get "http://192.168.3.185:6002/.DS_Store": EOF
+2022/11/18 16:36:34 MakeRequest failed: Get "http://192.168.3.185:7002/.DS_Store": EOF
+2022/11/18 16:36:34 scanning exp of  Dell DARC Default Credentials 1000
+2022/11/18 16:36:34 scanning exp of  Discuz 7.x/6.x global variable defense bypass rce 1000
+2022/11/18 16:36:34 scanning exp of  Django Debug Method Enabled 1000
+2022/11/18 16:36:34 scanning exp of  DrayTek pre-auth remote root RCE (CVE-2020-8515) 1000
+2022/11/18 16:36:34 scanning exp of  Drupal Core SQL Injection Vulnerability(CVE-2014-3704) 1000
+2022/11/18 16:36:34 scanning exp of  Drupal Core Multiple Remote Code Execution Vulnerabilities(CVE-2018-7600) 1000
+2022/11/18 16:36:34 scanning exp of  Drupal Core Arbitrary PHP Code Execution Vulnerability(CVE-2019-6340) 1000
+2022/11/18 16:36:34 scanning exp of  Drupal Core Remote Code Execution Vulnerability(CVE-2018-7602) 1000
+2022/11/18 16:36:34 scanning exp of  Dubbo RCE (CVE-2020-1948) 1000
+2022/11/18 16:36:34 scanning exp of  DuomiCms SQLi (CNVD-2018-05568) 1000
+2022/11/18 16:36:34 scanning exp of  Elasticsearch unauthorized 1000
+2022/11/18 16:36:34 scanning exp of  EnGenius EnShare IoT Gigabit Cloud Service RCE 1000
+2022/11/18 16:36:34 scanning exp of  EyouCMS Session brute force Bypass login 1000
+2022/11/18 16:36:34 scanning exp of  Eyou Mail system moni_detail.do RCE 1000
+2022/11/18 16:36:34 scanning exp of  F5 BIG-IP TMUI RCE (CVE-2020-5902) 1000
+2022/11/18 16:36:34 scanning exp of  F5 BIG-IP default account 1000
+2022/11/18 16:36:34 scanning exp of  F5 BIGIP iControl unauth RCE (CVE-2021-22986) 1000
+2022/11/18 16:36:34 scanning exp of  Fastjson 1.2.24 RCE (CNVD-2017-02833) 1000
+2022/11/18 16:36:34 scanning exp of  Fastjson 1.2.47 RCE (CNVD-2019-22238) 1000
+2022/11/18 16:36:34 scanning exp of  FineCMS Remote Command Execution (CNVD-2019-36681) 1000
+2022/11/18 16:36:34 scanning exp of  ForgeRock AM RCE (CVE-2021-35464) 1000
+2022/11/18 16:36:34 scanning exp of  FortiLogger Unauth Arbitrary File Upload(CVE-2021-3378) 1000
+2022/11/18 16:36:34 scanning exp of  Fortinet FortiOS Directory Traversal Vulnerability (CVE-2018-13379) 1000
+2022/11/18 16:36:34 scanning exp of  GitLab information leak (CVE-2020-26413) 1000
+2022/11/18 16:36:34 scanning exp of  Git repository found 1000
+2022/11/18 16:36:34 MakeRequest failed: Get "http://192.168.3.185:6002/.git/config": EOF
+2022/11/18 16:36:34 MakeRequest failed: Get "http://192.168.3.185:7002/.git/config": EOF
+2022/11/18 16:36:34 scanning exp of  GlassFish Arbitrary File Read (CVE-2017-1000028) 1000
+2022/11/18 16:36:34 scanning exp of  GoAhead Web Server LD_PRELOAD Arbitrary Module Load (CVE-2017-17562) 1000
+2022/11/18 16:36:34 scanning exp of  H3C SECPATH Operations and Maintenance Audit System RCE 1000
+2022/11/18 16:36:34 scanning exp of  HYBRID DVR default admin account rce 1000
+2022/11/18 16:36:34 scanning exp of  Hadoop YARN ResourceManager RCE 1000
+2022/11/18 16:36:34 scanning exp of  Hanvon kaoqin Login.action S2-005 RCE 1000
+2022/11/18 16:36:34 scanning exp of  Harbor Remote Privilege Escalation Vulnerability (CVE-2019-16097) 1000
+2022/11/18 16:36:34 scanning exp of  Harbor Default Credentials 1000
+2022/11/18 16:36:34 scanning exp of  Hikvision IP Camera Access Bypass (CVE-2017-7921) 1000
+2022/11/18 16:36:34 scanning exp of  Hikvision default admin account 1000
+2022/11/18 16:36:34 scanning exp of  Hongdian H8922 Arbitrary File Read (CVE-2021-28149) 1000
+2022/11/18 16:36:34 scanning exp of  Hsmedia Hgateway default account 1000
+2022/11/18 16:36:34 scanning exp of  Hsmedia Hgateway login SQli 1000
+2022/11/18 16:36:34 scanning exp of  Huawei HG532 Remote Code Execution (CVE-2017-17215) 1000
+2022/11/18 16:36:34 scanning exp of  Hyperic Default Credentials 1000
+2022/11/18 16:36:34 scanning exp of  IBM Spectrum Protect Plus hostname RCE (CVE-2020-4211) 1000
+2022/11/18 16:36:34 scanning exp of  IBM Spectrum Protect Plus npassword RCE (CVE-2020-4210) 1000
+2022/11/18 16:36:34 scanning exp of  IBM Spectrum Protect Plus password RCE (CVE-2020-4222) 1000
+2022/11/18 16:36:34 scanning exp of  IBM Spectrum Protect Plus username RCE (CVE-2020-4213) 1000
+2022/11/18 16:36:34 scanning exp of  IBM Informix Open Admin Tool RCE (CVE-2017-1092) 1000
+2022/11/18 16:36:34 scanning exp of  JetBrains .idea project directory 1000
+2022/11/18 16:36:34 MakeRequest failed: Get "http://192.168.3.185:6002/.idea/workspace.xml": EOF
+2022/11/18 16:36:34 MakeRequest failed: Get "http://192.168.3.185:7002/.idea/workspace.xml": EOF
+2022/11/18 16:36:34 scanning exp of  JingHang online marking Arbitrary File Upload 1000
+2022/11/18 16:36:34 scanning exp of  Jira SSRF in the makeRequest resource (CVE-2019-8451) 1000
+2022/11/18 16:36:34 scanning exp of  Jira Unauthenticated Popular Filters 1000
+2022/11/18 16:36:34 scanning exp of  Jira Unauthenticated User Picker 1000
+2022/11/18 16:36:34 scanning exp of  Jira service desk signup Exposed 1000
+2022/11/18 16:36:34 scanning exp of  Joomla Core SQL Injection (CVE-2015-7297) 1000
+2022/11/18 16:36:34 scanning exp of  Joomla content management system com_macgallery plugin database file leaked 1000
+2022/11/18 16:36:34 scanning exp of  Jupyter-Notebook Unauthorized Access 1000
+2022/11/18 16:36:34 scanning exp of  Kedacom DVR Access gateway File Read 1000
+2022/11/18 16:36:34 scanning exp of  kingsoft V8 terminal security system RCE 1000
+2022/11/18 16:36:34 scanning exp of  Klog Server Unauth RCE(CVE-2020-35729) 1000
+2022/11/18 16:36:34 scanning exp of  Kong API Gateway Unauthorized (CVE-2020-11710) 1000
+2022/11/18 16:36:34 scanning exp of  LEMS Power Management System RCE 1000
+2022/11/18 16:36:34 scanning exp of  LG SuperSign EZ CMS rce 1000
+2022/11/18 16:36:34 scanning exp of  Landray OA custom.jsp RCE 1000
+2022/11/18 16:36:34 scanning exp of  Laravel RCE (CVE-2021-3129) 1000
+2022/11/18 16:36:34 scanning exp of  Liferay Portal Java Unmarshalling via JSONWS RCE (CVE-2020-7961) 1000
+2022/11/18 16:36:34 scanning exp of  Mailgard Firewall default account 1000
+2022/11/18 16:36:34 scanning exp of  Mailgard Firewall ping function rce 1000
+2022/11/18 16:36:34 scanning exp of  Zoho ManageEngine Desktop Central 10 getChartImage rce (CVE-2020-10189) 1000
+2022/11/18 16:36:34 scanning exp of  ManageEngine OpManager RCE (CVE-2020-28653) 1000
+2022/11/18 16:36:34 scanning exp of  ManageEngine OpManger arbitrary file read (CVE-2020-12116) 1000
+2022/11/18 16:36:34 scanning exp of  Marathon unauthorized rce 1000
+2022/11/18 16:36:34 scanning exp of  MessageSolution EEA info leakage (CNVD-2021-10543) 1000
+2022/11/18 16:36:34 scanning exp of  Microsoft Exchange Server File Write (CVE-2021-27065) 1000
+2022/11/18 16:36:34 scanning exp of  Microsoft Exchange Server SSRF (CVE-2021-26855) 1000
+2022/11/18 16:36:34 scanning exp of  Microsoft SharePoint Server CVE-2019-0604 Remote Code Execution Vulnerability 1000
+2022/11/18 16:36:34 scanning exp of  Mida eFramework ajaxreq.php RCE(CVE-2020-15920) 1000
+2022/11/18 16:36:35 scanning exp of  MinIO default account 1000
+2022/11/18 16:36:35 scanning exp of  Mobinat Wireless Router system_log.cgi RCE 1000
+2022/11/18 16:36:35 scanning exp of  MySQL Login Bypass Vulnerability (CVE-2012-2122) 1000
+2022/11/18 16:36:35 scanning exp of  NETENTSEC Internet control gateway default account 1000
+2022/11/18 16:36:35 scanning exp of  Netentsec NGFW FireWall Anyterm-module RCE 1000
+2022/11/18 16:36:35 scanning exp of  Netflix Conductor RCE (CVE-2020-9296) 1000
+2022/11/18 16:36:35 scanning exp of  NETGEAR ProSAFE Plus Switch default admin account rce 1000
+2022/11/18 16:36:35 scanning exp of  Multiple Netgear Routers Remote Command Injection Vulnerability (CVE-2016-6277) 1000
+2022/11/18 16:36:35 scanning exp of  OS Command Injection in Nexus Repository Manager 2.x (CVE-2019-5475) 1000
+2022/11/18 16:36:35 scanning exp of  NexusDB path traversal (CVE-2020-24571) 1000
+2022/11/18 16:36:35 scanning exp of  Nexus Repository Manager 3 RCE (CVE-2019-7238) 1000
+2022/11/18 16:36:35 scanning exp of  nostromo nhttpd Directory Traversal Remote Command Execution Vulnerability (CVE-2011-0751) 1000
+2022/11/18 16:36:35 scanning exp of  NuCom 11N Wireless Router v5.07.90 Remote Privilege Escalation 1000
+2022/11/18 16:36:35 scanning exp of  OpenSMTPD Remote Code Execution Vulnerability (CVE-2020-7247) 1000
+2022/11/18 16:36:35 scanning exp of  Opengear default root account 1000
+2022/11/18 16:36:35 scanning exp of  Oracle Application Server File Read (CVE-2020-14864) 1000
+2022/11/18 16:36:35 scanning exp of  PHPUnit CVE-2017-9841 Arbitrary Code Execution Vulnerability 1000
+2022/11/18 16:36:35 scanning exp of  PHP 8.1.0-dev Zerodium Backdoor vulnerabilities 1000
+2022/11/18 16:36:35 scanning exp of  Pandora FMS SQL Injection (CVE-2021-32099) 1000
+2022/11/18 16:36:35 scanning exp of  PbootCMS parserIfLabel RCE 1000
+2022/11/18 16:36:35 scanning exp of  Polycom RMX 1000 Default Credentials 1000
+2022/11/18 16:36:35 scanning exp of  Polycom RSS 2000 Default Credentials 1000
+2022/11/18 16:36:35 scanning exp of  Polycom RSS 4000 Default Credentials 1000
+2022/11/18 16:36:35 scanning exp of  Polycom Web Configuration Utility default admin account rce 1000
+2022/11/18 16:36:35 scanning exp of  PowerCreator CMS Arbitrary File Upload 1000
+2022/11/18 16:36:35 scanning exp of  Pulse Secure SSL VPN Arbitrary File Read (CVE-2019-11510) 1000
+2022/11/18 16:36:35 scanning exp of  Qi'an Xintianqing terminal security management system client_upload_file.json file upload GetShell 1000
+2022/11/18 16:36:35 scanning exp of  QiAnXin WangShen VPN file upload 1000
+2022/11/18 16:36:35 scanning exp of  Rainwise IP-100 default admin account 1000
+2022/11/18 16:36:35 scanning exp of  Rails Asset Pipeline Directory Traversal (CVE-2018-3760) 1000
+2022/11/18 16:36:35 scanning exp of  File Content Disclosure on Rails (CVE-2019-5418) 1000
+2022/11/18 16:36:35 scanning exp of  Ruijie EG RCE 1000
+2022/11/18 16:36:35 scanning exp of  Ruijie EG login.php rce 1000
+2022/11/18 16:36:35 scanning exp of  Ruijie RG UAC Password leakage 1000
+2022/11/18 16:36:35 scanning exp of  S2 NetBox RCE 1000
+2022/11/18 16:36:35 scanning exp of  Sangfor EDR 3.2.21 Arbitrary code execution vulnerability 1000
+2022/11/18 16:36:35 scanning exp of  SAP NetWeaver Authentication Bypass (CVE-2020-6287) RECON 1000
+2022/11/18 16:36:35 scanning exp of  SVN repository found 1000
+2022/11/18 16:36:35 MakeRequest failed: Get "http://192.168.3.185:6002/.svn/entries": EOF
+2022/11/18 16:36:35 MakeRequest failed: Get "http://192.168.3.185:7002/.svn/entries": EOF
+2022/11/18 16:36:35 scanning exp of  SaltStack RCE (CVE-2020-11651) 1000
+2022/11/18 16:36:35 scanning exp of  SaltStack RCE (CVE-2020-16846) 1000
+2022/11/18 16:36:35 scanning exp of  Sangfor EDR anyuser login 1000
+2022/11/18 16:36:35 scanning exp of  Sangfor EDR unauthorized RCE (CNVD-2020-46552) 1000
+2022/11/18 16:36:35 scanning exp of  Sangfor VDI unauthorized RCE 1000
+2022/11/18 16:36:35 scanning exp of  Scalar i40 Default Credentials 1000
+2022/11/18 16:36:35 scanning exp of  Seeyon File Read (CNVD-2020-62422) 1000
+2022/11/18 16:36:35 scanning exp of  Seeyon OA A8 unauth file upload getshell (CNVD-2021-01627) 1000
+2022/11/18 16:36:35 scanning exp of  Smarters WEB TV PLAYER player command execution(CVE-2020-9380) 1000
+2022/11/18 16:36:35 scanning exp of  SolarWinds Orion Local File Disclosure (CVE-2020-10148) 1000
+2022/11/18 16:36:35 scanning exp of  SonicWall SSL-VPN Unauthorized RCE 1000
+2022/11/18 16:36:35 scanning exp of  SpringBootAdmin unauthorized access 1000
+2022/11/18 16:36:35 scanning exp of  SpringBoot Actuator unauthorized access 1000
+2022/11/18 16:36:35 scanning exp of  Spring Boot 1.5 SnakeYAML RCE 1000
+2022/11/18 16:36:35 scanning exp of  Spring Cloud Config Server Directory Traversal (CVE-2019-3799) 1000
+2022/11/18 16:36:35 scanning exp of  Spring Cloud Config Server Directory Traversal (CVE-2020-5410) 1000
+2022/11/18 16:36:35 scanning exp of  Spring Data Commons RCE (CVE-2018-1273) 1000
+2022/11/18 16:36:35 scanning exp of  Apache Struts2 S2-005 RCE (CVE-2010-1870) 1000
+2022/11/18 16:36:35 scanning exp of  Apache Struts2 S2-009 RCE (CVE-2011-3923) 1000
+2022/11/18 16:36:35 scanning exp of  Apache Struts2 S2-013 RCE (CVE-2013-1966) 1000
+2022/11/18 16:36:35 scanning exp of  Apache Struts2 S2-016 RCE (CVE-2013-2251) 1000
+2022/11/18 16:36:35 scanning exp of  Apache Struts2 S2-032 RCE (CVE-2016-3081) 1000
+2022/11/18 16:36:35 scanning exp of  Apache Struts2 S2-045 RCE (CVE-2017-5638) 1000
+2022/11/18 16:36:35 scanning exp of  Apache Struts2 S2-046 RCE (CVE-2017-5638) 1000
+2022/11/18 16:36:35 scanning exp of  Apache Struts S2-048 RCE (CVE-2017-9791) 1000
+2022/11/18 16:36:35 scanning exp of  Apache Struts S2-052 RCE (CVE-2017-9805) 1000
+2022/11/18 16:36:35 scanning exp of  Apache Struts S2-053 RCE (CVE-2017-12611) 1000
+2022/11/18 16:36:35 scanning exp of  Apache Struts2 S2-057 RCE (CVE-2018-11776) 1000
+2022/11/18 16:36:35 scanning exp of  Apache Struts2 S2-061 RCE (CVE-2020-17530) 1000
+2022/11/18 16:36:35 scanning exp of  SugarCRM REST Unserialize PHP Code Execution 1000
+2022/11/18 16:36:35 scanning exp of  Supervisor XML-RPC Authenticated Remote Code Execution 1000
+2022/11/18 16:36:35 scanning exp of  Supervisor default account 1000
+2022/11/18 16:36:35 scanning exp of  TPShop 3.x SQL Injection 1000
+2022/11/18 16:36:35 scanning exp of  TP-Link NCxxx Command Injection (CVE-2020-12109) 1000
+2022/11/18 16:36:35 scanning exp of  TerraMaster TOS RCE (CVE-2020-15568) 1000
+2022/11/18 16:36:35 scanning exp of  TerraMaster TOS RCE (CVE-2020-28188) 1000
+2022/11/18 16:36:35 scanning exp of  ThinkPHP 5.x RCE 1000
+2022/11/18 16:36:35 scanning exp of  Topsec Firewall default account 1000
+2022/11/18 16:36:35 scanning exp of  Topsec Firewall telnet default account 1000
+2022/11/18 16:36:35 scanning exp of  unraid 6.8.0 authenticate bypass remote code execution(CVE-2020-5847) 1000
+2022/11/18 16:36:35 scanning exp of  VMware View Planner RCE (CVE-2021-21978) 1000
+2022/11/18 16:36:35 scanning exp of  VMware vCenter Arbitrary File Read 1000
+2022/11/18 16:36:35 scanning exp of  VMware vCenter Server RCE (CVE-2021-21972) 1000
+2022/11/18 16:36:35 scanning exp of  VMware vSphere Client (HTML5) RCE (CVE-2021-21985) 1000
+2022/11/18 16:36:35 scanning exp of  Venustech TianYue default account 1000
+2022/11/18 16:36:35 scanning exp of  VisualSVN Server default account 1000
+2022/11/18 16:36:35 scanning exp of  weaver e-cology oa system front page sql injection 1000
+2022/11/18 16:36:35 scanning exp of  Weaver e-Bridge Arbitrary File Download 1000
+2022/11/18 16:36:35 scanning exp of  Weaver e-cology OA Database config leakage 1000
+2022/11/18 16:36:35 scanning exp of  Weaver e-cology OA file download (CNVD-2019-29900) 1000
+2022/11/18 16:36:35 scanning exp of  Weaver e-cology OA file read (CNVD-2019-29902) 1000
+2022/11/18 16:36:35 scanning exp of  Weaver e-cology OA RCE (CNVD-2019-32204) 1000
+2022/11/18 16:36:35 scanning exp of  Weaver e-cology OA SQLi (CNVD-2019-34241) 1000
+2022/11/18 16:36:35 scanning exp of  Weaver e-cology OA XXE 1000
+2022/11/18 16:36:35 scanning exp of  Weaver e-cology OA apps.ktree.servlet.KtreeUploadAction file upload 1000
+2022/11/18 16:36:35 scanning exp of  Weaver e-cology OA SQLi 1000
+2022/11/18 16:36:35 scanning exp of  WebLogic XML External Entity (XXE) Injection (CVE-2019-2647) 1000
+2022/11/18 16:36:35 scanning exp of  IBM WebSphere Application Server Deserialization RCE (CVE-2020-4450) 1000
+2022/11/18 16:36:35 scanning exp of  Weblogic 10.3.6.0.0&12.1.3.0.0 jdk 7u21 T3 RCE 1000
+2022/11/18 16:36:35 scanning exp of  Weblogic IIOP RCE (CVE-2020-2551) 1000
+2022/11/18 16:36:35 scanning exp of  WebLogic SearchPublicRegistries SSRF(CVE-2014-4210) 1000
+2022/11/18 16:36:35 scanning exp of  Oracle Weblogic Server Deserialization RCE (CVE-2020-14825) 1000
+2022/11/18 16:36:35 scanning exp of  Weblogic Secondary Deserialization RCE (CVE-2021-2135) 1000
+2022/11/18 16:36:35 scanning exp of  WebLogic deserialize AsyncResponseService (CVE-2019-2725) 1000
+2022/11/18 16:36:35 scanning exp of  Oracle Weblogic Server Deserialization RCE(CVE-2018-2628) 1000
+2022/11/18 16:36:35 scanning exp of  Weblogic Server RCE (CVE-2021-2109) 1000
+2022/11/18 16:36:35 scanning exp of  Weblogic ReflectionExtractor RCE (CVE-2020-2555) 1000
+2022/11/18 16:36:35 scanning exp of  Oracle WebLogic Unauthenticated Takeover (CVE-2020-14883) 1000
+2022/11/18 16:36:35 scanning exp of  Oracle WebLogic Unauthenticated RCE (CVE-2020-14882/CVE-2020-14750) 1000
+2022/11/18 16:36:35 scanning exp of  Oracle WebLogic Server Remote Security Vulnerability (CVE-2017-10271&CVE-2017-3506) 1000
+2022/11/18 16:36:35 scanning exp of  Webmin RCE (CVE-2019-15107) 1000
+2022/11/18 16:36:35 scanning exp of  Western Digital My Cloud's snmp_mgr.cgi file multiple parameter command execution 1000
+2022/11/18 16:36:35 scanning exp of  WordPress Email Subscribers and Newsletters 4.2.3 User Information Disclosure (CVE-2019-19985) 1000
+2022/11/18 16:36:35 scanning exp of  Xerox ApeosPort default admin account 1000
+2022/11/18 16:36:35 scanning exp of  Xerox DocuCentre default admin account 1000
+2022/11/18 16:36:35 scanning exp of  Xerox WorkCentre default admin account 1000
+2022/11/18 16:36:35 scanning exp of  Yonyou GRP-U8 RCE with SQLi 1000
+2022/11/18 16:36:35 scanning exp of  Yonyou NC Arbitrary File Include 1000
+2022/11/18 16:36:35 scanning exp of  Yonyou NC dcupdateService Deserialization RCE 1000
+2022/11/18 16:36:35 scanning exp of  Yonyou NC RCE with file upload 1000
+2022/11/18 16:36:35 scanning exp of  Yonyou U8-OA RCE with SQLi 1000
+2022/11/18 16:36:35 scanning exp of  Yonyou TurboCRM strresview sqli 1000
+2022/11/18 16:36:35 scanning exp of  ZTE WLAN Controller SQLi to get admin password 1000
+2022/11/18 16:36:35 scanning exp of  Zabbix default account 1000
+2022/11/18 16:36:35 scanning exp of  Zeroshell RCE (CVE-2019-12725) 1000
+2022/11/18 16:36:35 scanning exp of  Zimbra XXE (CVE-2019-9670) 1000
+2022/11/18 16:36:35 scanning exp of  Undocumented user account in Zyxel products 1000
+2022/11/18 16:36:35 scanning exp of  adslr router default password 1000
+2022/11/18 16:36:35 scanning exp of  AMTT eFlow HiBOS server Ping Command Injection 1000
+2022/11/18 16:36:35 scanning exp of  BT Control Panel Unauthorized Access 1000
+2022/11/18 16:36:36 scanning exp of  cacti default account 1000
+2022/11/18 16:36:36 scanning exp of  cisco prime infrastructure unauthorized RCE(CVE-2019-1821) 1000
+2022/11/18 16:36:36 scanning exp of  cobaltstrike backdoor 1000
+2022/11/18 16:36:36 scanning exp of  dahua dvr config backdoor 1000
+2022/11/18 16:36:36 scanning exp of  docker unauthorized 1000
+2022/11/18 16:36:36 scanning exp of  Alibaba Druid unauthorized access 1000
+2022/11/18 16:36:36 scanning exp of  ESAFENET CDG arbitrary file download (CVE-2019-9632) 1000
+2022/11/18 16:36:36 scanning exp of  ESAFENET DLP SystemConfig Default Password 1000
+2022/11/18 16:36:36 scanning exp of  ESAFENET DLP logincontroller Default Password 1000
+2022/11/18 16:36:36 scanning exp of  ftp weak password 1000
+2022/11/18 16:36:36 brute force load file D:\goby\goby-win-x64-2.1.2\golib\ftp_user_pass.dict ok
+2022/11/18 16:36:36 brute force load file D:\goby\goby-win-x64-2.1.2\golib\ftp_user_pass.dict ok
+2022/11/18 16:36:38 127.0.0.1:50780   POST   /api/v1/getStatisticsData  
+2022/11/18 16:36:38 127.0.0.1:50779   POST   /api/v1/getProgress  
+2022/11/18 16:36:42 127.0.0.1:50789   POST   /api/v1/getProgress  
+2022/11/18 16:36:42 127.0.0.1:50790   POST   /api/v1/getStatisticsData  
+2022/11/18 16:36:46 127.0.0.1:50792   POST   /api/v1/getStatisticsData  
+2022/11/18 16:36:46 127.0.0.1:50791   POST   /api/v1/getProgress  
+2022/11/18 16:36:50 127.0.0.1:50798   POST   /api/v1/getProgress  
+2022/11/18 16:36:50 127.0.0.1:50799   POST   /api/v1/getStatisticsData  
+2022/11/18 16:36:54 127.0.0.1:50805   POST   /api/v1/getStatisticsData  
+2022/11/18 16:36:54 127.0.0.1:50804   POST   /api/v1/getProgress  
+2022/11/18 16:36:58 127.0.0.1:50842   POST   /api/v1/getStatisticsData  
+2022/11/18 16:36:58 127.0.0.1:50841   POST   /api/v1/getProgress  
+2022/11/18 16:37:02 127.0.0.1:50850   POST   /api/v1/getStatisticsData  
+2022/11/18 16:37:02 127.0.0.1:50849   POST   /api/v1/getProgress  
+2022/11/18 16:37:06 scanning exp of  Red Hat Jboss Enterprise Application Platform CVE-2017-12149 Remote Code Execution Vulnerability 1000
+2022/11/18 16:37:06 127.0.0.1:50852   POST   /api/v1/getStatisticsData  
+2022/11/18 16:37:06 127.0.0.1:50851   POST   /api/v1/getProgress  
+2022/11/18 16:37:06 scanning exp of  Multiple RedHat JBoss Products CVE-2015-7501 Remote Code Execution Vulnerability 1000
+2022/11/18 16:37:06 scanning exp of  Red Hat Jboss Application Server CVE-2017-7504 Remote Code Execution Vulnerability 1000
+2022/11/18 16:37:06 scanning exp of  Jenkins Multiple Security Vulnerabilities 1000
+2022/11/18 16:37:06 scanning exp of  Jenkins unauthenticated RCE (CVE-2017-1000353) 1000
+2022/11/18 16:37:06 scanning exp of  Jenkins Script Security and Pipeline RCE(CVE-2019-1003000) 1000
+2022/11/18 16:37:06 scanning exp of  jenkins unauthorized getshell 1000
+2022/11/18 16:37:06 scanning exp of  Kibana unauthorized 1000
+2022/11/18 16:37:06 scanning exp of  landray OA arbitrary file read 1000
+2022/11/18 16:37:06 scanning exp of  lanproxy Directory Traversal (CVE-2021-3019) 1000
+2022/11/18 16:37:06 scanning exp of  Leagsoft UniNAC file upload RCE 1000
+2022/11/18 16:37:06 scanning exp of  memcached unauthorized 1000
+2022/11/18 16:37:06 scanning exp of  Metinfo met_download_list SQL time delay injection 1000
+2022/11/18 16:37:06 scanning exp of  ACME mini_httpd Arbitrary File Read (CVE-2018-18778) 1000
+2022/11/18 16:37:06 scanning exp of  mobotix default account 1000
+2022/11/18 16:37:06 scanning exp of  mongo-express rce(CVE-2019-10758) 1000
+2022/11/18 16:37:06 scanning exp of  MongoDB unauthorized 1000
+2022/11/18 16:37:06 scanning exp of  MsSQL weak password 1000
+2022/11/18 16:37:06 scanning exp of  Hardcoded FTP username of myscada(CVE-2018-11311) 1000
+2022/11/18 16:37:06 scanning exp of  MySQL weak password 1000
+2022/11/18 16:37:06 brute force load file D:\goby\goby-win-x64-2.1.2\golib\mysql_user_pass.dict ok
+2022/11/18 16:37:06 brute force load file D:\goby\goby-win-x64-2.1.2\golib\mysql_user_pass.dict ok
+2022/11/18 16:37:06 brute force load file D:\goby\goby-win-x64-2.1.2\golib\mysql_user_pass.dict ok
+2022/11/18 16:37:10 127.0.0.1:50907   POST   /api/v1/getStatisticsData  
+2022/11/18 16:37:10 127.0.0.1:50906   POST   /api/v1/getProgress  
+2022/11/18 16:37:13 127.0.0.1:50909   POST   /api/v1/getStatisticsData  
+2022/11/18 16:37:13 127.0.0.1:50908   POST   /api/v1/getProgress  
+2022/11/18 16:37:16 127.0.0.1:50910   POST   /api/v1/getProgress  
+2022/11/18 16:37:16 127.0.0.1:50911   POST   /api/v1/getStatisticsData  
+[mysql] 2022/11/18 16:37:16 packets.go:37: unexpected EOF
+2022/11/18 16:37:19 127.0.0.1:50915   POST   /api/v1/getProgress  
+2022/11/18 16:37:19 127.0.0.1:50916   POST   /api/v1/getStatisticsData  
+2022/11/18 16:37:22 127.0.0.1:50918   POST   /api/v1/getProgress  
+2022/11/18 16:37:22 127.0.0.1:50919   POST   /api/v1/getStatisticsData  
+2022/11/18 16:37:25 127.0.0.1:50921   POST   /api/v1/getProgress  
+2022/11/18 16:37:25 127.0.0.1:50922   POST   /api/v1/getStatisticsData  
+[mysql] 2022/11/18 16:37:26 packets.go:37: unexpected EOF
+2022/11/18 16:37:28 127.0.0.1:50924   POST   /api/v1/getProgress  
+2022/11/18 16:37:28 127.0.0.1:50925   POST   /api/v1/getStatisticsData  
+2022/11/18 16:37:31 127.0.0.1:50932   POST   /api/v1/getProgress  
+2022/11/18 16:37:31 127.0.0.1:50933   POST   /api/v1/getStatisticsData  
+2022/11/18 16:37:34 127.0.0.1:50935   POST   /api/v1/getStatisticsData  
+2022/11/18 16:37:34 127.0.0.1:50934   POST   /api/v1/getProgress  
+[mysql] 2022/11/18 16:37:36 packets.go:37: unexpected EOF
+2022/11/18 16:37:38 127.0.0.1:50938   POST   /api/v1/getStatisticsData  
+2022/11/18 16:37:38 127.0.0.1:50937   POST   /api/v1/getProgress  
+2022/11/18 16:37:42 127.0.0.1:50945   POST   /api/v1/getProgress  
+2022/11/18 16:37:42 127.0.0.1:50946   POST   /api/v1/getStatisticsData  
+2022/11/18 16:37:46 127.0.0.1:50948   POST   /api/v1/getProgress  
+2022/11/18 16:37:46 127.0.0.1:50949   POST   /api/v1/getStatisticsData  
+[mysql] 2022/11/18 16:37:46 packets.go:37: unexpected EOF
+2022/11/18 16:37:46 scanning exp of  Nexus Repository Manager 2 default account 1000
+2022/11/18 16:37:46 scanning exp of  NSFOCUS next-generation firewall default password 1000
+2022/11/18 16:37:46 scanning exp of  NSFOCUS UTS Account Password Disclosure 1000
+2022/11/18 16:37:46 scanning exp of  phpLDAPadmin default account 1000
+2022/11/18 16:37:46 scanning exp of  PHPStudy Backdoor Remote Code execution 1000
+2022/11/18 16:37:48 scanning exp of  PostgreSQL weak password 1000
+2022/11/18 16:37:48 scanning exp of  RDP weak password 1000
+2022/11/18 16:37:48 brute force load file D:\goby\goby-win-x64-2.1.2\golib\rdp_user_pass.dict ok
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 John 12345
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Standard samsung
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Administrator Qq123456
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Administrator Aa123123
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Administrator Asd123456789
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Test test
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Administrator P@ssw0rd
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Admin admin
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Administrator Abc123456
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Administrator Abcd1234
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Default Password123
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Administrator Aa123456
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Administrator Aa1234567890
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Operador OPERADOR
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Administrator 1qaz@WSX
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 User user
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Share 123456
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Logmeinremoteuser 12345678
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Administrator Password123
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Admin 123456
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 User01 user01
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 User2 user2
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 User02 user02
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 User 123
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 User1 user1
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Demo demo
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Scan scan
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 1 1
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Administrator QWEqwe!@#123
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 User03 user03
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Remoto1 remoto1
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Pc 1234
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Administrator Admin123456
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Administrator Password1
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 User3 user3
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Administrator !QAZ2wsx
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Teste teste
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 James James123
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Remoto2 remoto2
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Scanner scanner
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Test test123
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Administrator admin@123
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Administrator 1234
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Administrator qwe!@#123
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 User04 user04
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Administrator 123456
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 User1 123
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Administrator QWEqwe123
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Guard guard
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Administrator Passw0rd
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 User01 P@ssw0rd
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Remoto3 remoto3
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 User 1
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Administrator Asd123456
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Administrator Qaz123456789
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 001 001
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Admin P@ssw0rd
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Administrator Abc123456789
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 User 123456
+2022/11/18 16:37:48 RDPCheck 192.168.3.132:3389 Administrator 1q2w3e4r!
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 User5 user5
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 User4 user4
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 2 2
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Test 123
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Rx1 rx1
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Test P@ssw0rd
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Administrator QWER1234!@#$
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Admin 123
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Administrator Test1234
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Pos pos
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 T1 123
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Escaner escaner
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 User6 user6
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 User10 user10
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 User9 123456
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 User 1234
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 User4 123456
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Aloha hello
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Test test1234
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Administrator Admin123
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Administrator 1qaz@WSX3edc
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Admin 1234
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Usuario usuario
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Test 1234
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 User5 123
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Administrator Asdf1234
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 User2 123
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 User2 123456
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Dell dell
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Controleur virus
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Terminal1 123456
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 1005 1005
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Usuario 123456
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Pedro pedro
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Administrator Admin@123
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Administrator 1
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 123 123
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Db2admin db2admin
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 User8 123456
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Test 123456
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 User6 123
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 User1 123456
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Cathy Welcome1
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Administrator abcd@1234
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Administrator 1qaz!QAZ
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Administrateur P@ssw0rd
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 User User
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Pharma pharma
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 User10 123
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Informix 123123
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Testuser P@ssw0rd
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 A a
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Student student
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Administrator Qwer1234
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 User3 123
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Crmadmin Pass@word1
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Jramirez 12345
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Pc1 PC1
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Temp2 123456
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Reception reception
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Administrator 123qwe!@#QWE
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Administrator Admin888
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Stag3 stag3
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Test01 test01
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Administrator p@ssw0rd
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 User2 1234
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 User3 1234
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Administrator A123456a
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Kott 123qwe!@#
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 User02 123456
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Guest vice
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Backup backup
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Administrator 123
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Reception R3c3pt10n
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Scan scanscan
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 User9 123
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 User4 123
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Dell 123
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 User6 123456
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Mohamed P@ssw0rd
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Test testtest
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Prinect prinect
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Caixa caixa
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 User user1234
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Administrator Passw0rd!
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 User02 P@ssw0rd
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Usuario1 usuario1
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Soporte soporte
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 It P@ssw0rd
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Administrator 1qaz@WSX#EDC
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Guest ADMIN@123
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Postgres postgres
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Almacen almacen
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 User3 123456
+2022/11/18 16:37:49 RDPCheck 192.168.3.132:3389 Nico nico
+Exception 0xc0000005 0x1 0x1ec498 0x188aded
+PC=0x188aded
+
+runtime: unknown pc 0x188aded
+stack: frame={sp:0x379bfce0, fp:0x0} stack=[0x0,0x379bfeec)
+0x379bfc60:  0x00000000  0x00000000  0x00000000  0x00000000 
+0x379bfc70:  0x00000000  0x00000000  0x00000000  0x00000000 
+0x379bfc80:  0x00000000  0x00000000  0x00000000  0x00000000 
+0x379bfc90:  0x00000000  0x00000000  0x00000000  0x00000000 
+0x379bfca0:  0x00000000  0x00000000  0x00000000  0x00000000 
+0x379bfcb0:  0x00000000  0x00000000  0x00000000  0x00000000 
+0x379bfcc0:  0x00000000  0x00000000  0x00000000  0x00000000 
+0x379bfcd0:  0x7ddadac0  0x00020000  0x00000004  0x00000000 
+0x379bfce0: <0x6eaee9f8  0x7038c0b8  0x379bfd08  0x01889459 
+0x379bfcf0:  0x7ddadac0  0x00000000  0x00020000  0x7dcfc5f8 
+0x379bfd00:  0x7dcf0f88  0x7038c0b8  0x379bfd28  0x018354a9 
+0x379bfd10:  0x00000000  0x00000000  0x379bfd38  0x00000300 
+0x379bfd20:  0x00000001  0x70dcb5a0  0x379bfd58  0x017e98fd 
+0x379bfd30:  0x7dcfc5f8  0x7038c0b8  0x379bfda8  0x017e0688 
+0x379bfd40:  0x6eaee9f8  0xffffffff  0x00000400  0x70dcb5a0 
+0x379bfd50:  0x7038c0b8  0x00000000  0x379bfd88  0x017e0ca8 
+runtime: unknown pc 0x188aded
+stack: frame={sp:0x379bfce0, fp:0x0} stack=[0x0,0x379bfeec)
+0x379bfc60:  0x00000000  0x00000000  0x00000000  0x00000000 
+0x379bfc70:  0x00000000  0x00000000  0x00000000  0x00000000 
+0x379bfc80:  0x00000000  0x00000000  0x00000000  0x00000000 
+0x379bfc90:  0x00000000  0x00000000  0x00000000  0x00000000 
+0x379bfca0:  0x00000000  0x00000000  0x00000000  0x00000000 
+0x379bfcb0:  0x00000000  0x00000000  0x00000000  0x00000000 
+0x379bfcc0:  0x00000000  0x00000000  0x00000000  0x00000000 
+0x379bfcd0:  0x7ddadac0  0x00020000  0x00000004  0x00000000 
+0x379bfce0: <0x6eaee9f8  0x7038c0b8  0x379bfd08  0x01889459 
+0x379bfcf0:  0x7ddadac0  0x00000000  0x00020000  0x7dcfc5f8 
+0x379bfd00:  0x7dcf0f88  0x7038c0b8  0x379bfd28  0x018354a9 
+0x379bfd10:  0x00000000  0x00000000  0x379bfd38  0x00000300 
+0x379bfd20:  0x00000001  0x70dcb5a0  0x379bfd58  0x017e98fd 
+0x379bfd30:  0x7dcfc5f8  0x7038c0b8  0x379bfda8  0x017e0688 
+0x379bfd40:  0x6eaee9f8  0xffffffff  0x00000400  0x70dcb5a0 
+0x379bfd50:  0x7038c0b8  0x00000000  0x379bfd88  0x017e0ca8 
+
+goroutine 7084 [syscall]:
+runtime.cgocall(0x16deb85, 0x19582ef4)
+	runtime/cgocall.go:156 +0x58 fp=0x19582ee0 sp=0x19582ec8 pc=0x404218
+git.gobies.org/goby/goscanner/jsonvul/protocols._Cfunc_rdpcheck(0x5777eea8, 0xd3d, 0x6eaed620, 0x6eaed680, 0x0)
+	_cgo_gotypes.go:105 +0x3b fp=0x19582ef4 sp=0x19582ee0 pc=0xff1aab
+git.gobies.org/goby/goscanner/jsonvul/protocols.RDPCheck({0x1a737998, 0x12}, {0x19547fa0, 0x4}, {0x19547fa5, 0x4}, 0x1a2be6e0)
+	git.gobies.org/goby/goscanner@v0.0.0-20220704014506-a33f6132d645/jsonvul/protocols/rdp.go:111 +0x1ed fp=0x19582f68 sp=0x19582ef4 pc=0xff1d8d
+git.gobies.org/goby/goscanner/jsonvul.(*ScanBruteForce).bruteOne(0x1759a288, 0x18966f18, 0x19de0540, 0x19d1e120, 0x1892c2f0, 0x19de05b0, 0x17138080)
+	git.gobies.org/goby/goscanner@v0.0.0-20220704014506-a33f6132d645/jsonvul/scanbrute.go:192 +0x2dd fp=0x19582fd0 sp=0x19582f68 pc=0x102723d
+runtime.goexit()
+	runtime/asm_386.s:1319 +0x1 fp=0x19582fd4 sp=0x19582fd0 pc=0x46ec01
+created by git.gobies.org/goby/goscanner/jsonvul.(*ScanBruteForce).BruteCheck
+	git.gobies.org/goby/goscanner@v0.0.0-20220704014506-a33f6132d645/jsonvul/scanbrute.go:234 +0xf3
+
+goroutine 1 [chan receive, 14 minutes]:
+main.main()
+	/Users/houdoudou/go/src/git.gobies.org/goby/goby/cmd/goby-cmd/main.go:399 +0x21da
+
+goroutine 66 [syscall, 14 minutes]:
+os/signal.signal_recv()
+	runtime/sigqueue.go:169 +0xf1
+os/signal.loop()
+	os/signal/signal_unix.go:24 +0x1a
+created by os/signal.Notify.func1.1
+	os/signal/signal.go:151 +0x2f
+
+goroutine 12 [IO wait, 14 minutes]:
+internal/poll.runtime_pollWait(0x3953d820, 0x72)
+	runtime/netpoll.go:303 +0x52
+internal/poll.(*pollDesc).wait(0x16e56514, 0x72, 0x0)
+	internal/poll/fd_poll_runtime.go:84 +0x37
+internal/poll.execIO(0x16e56434, 0x29c5c24)
+	internal/poll/fd_windows.go:175 +0xfc
+internal/poll.(*FD).Read(0x16e56420, {0x18af3000, 0x1000, 0x1000})
+	internal/poll/fd_windows.go:441 +0x12b
+net.(*netFD).Read(0x16e56420, {0x18af3000, 0x1000, 0x1000})
+	net/fd_posix.go:56 +0x3f
+net.(*conn).Read(0x1a732190, {0x18af3000, 0x1000, 0x1000})
+	net/net.go:183 +0x4f
+bufio.(*Reader).fill(0x18d36c00)
+	bufio/bufio.go:101 +0xe9
+bufio.(*Reader).Peek(0x18d36c00, 0x2)
+	bufio/bufio.go:139 +0x6d
+github.com/gorilla/websocket.(*Conn).read(0x18590f00, 0x2)
+	github.com/gorilla/websocket@v1.5.0/conn.go:371 +0x30
+github.com/gorilla/websocket.(*Conn).advanceFrame(0x18590f00)
+	github.com/gorilla/websocket@v1.5.0/conn.go:809 +0xae
+github.com/gorilla/websocket.(*Conn).NextReader(0x18590f00)
+	github.com/gorilla/websocket@v1.5.0/conn.go:1009 +0xb5
+github.com/gorilla/websocket.(*Conn).ReadJSON(0x18590f00, {0x1f14300, 0x18889830})
+	github.com/gorilla/websocket@v1.5.0/json.go:50 +0x25
+git.gobies.org/goby/goby/api.websocketInitializer({0x2c6f7c4, 0x1848a000}, 0x182e0280)
+	git.gobies.org/goby/goby/api/live.go:59 +0x16f
+net/http.HandlerFunc.ServeHTTP(...)
+	net/http/server.go:2047
+git.gobies.org/goby/goby/api.basicAuth.func1({0x2c6f7c4, 0x1848a000}, 0x182e0280)
+	git.gobies.org/goby/goby/api/api.go:115 +0x245
+net/http.HandlerFunc.ServeHTTP(...)
+	net/http/server.go:2047
+git.gobies.org/goby/goby/api.logHttpRequest.func1({0x2c6f7c4, 0x1848a000}, 0x182e0280)
+	git.gobies.org/goby/goby/api/api.go:98 +0x1d1
+net/http.HandlerFunc.ServeHTTP(0x1a035238, {0x2c6f7c4, 0x1848a000}, 0x182e0280)
+	net/http/server.go:2047 +0x34
+github.com/gorilla/mux.(*Router).ServeHTTP(0x1a5250e0, {0x2c6f7c4, 0x1848a000}, 0x182e0180)
+	github.com/gorilla/mux@v1.8.0/mux.go:210 +0x1d1
+net/http.serverHandler.ServeHTTP({0x182e8090}, {0x2c6f7c4, 0x1848a000}, 0x182e0180)
+	net/http/server.go:2879 +0x359
+net/http.(*conn).serve(0x19dbc0c0, {0x2c700c4, 0x1a72c3c0})
+	net/http/server.go:1930 +0xc16
+created by net/http.(*Server).Serve
+	net/http/server.go:3034 +0x428
+
+goroutine 33 [IO wait]:
+internal/poll.runtime_pollWait(0x3953d8bc, 0x72)
+	runtime/netpoll.go:303 +0x52
+internal/poll.(*pollDesc).wait(0x16e560f4, 0x72, 0x0)
+	internal/poll/fd_poll_runtime.go:84 +0x37
+internal/poll.execIO(0x16e56014, 0x1851edb0)
+	internal/poll/fd_windows.go:175 +0xfc
+internal/poll.(*FD).acceptOne(0x16e56000, 0x774, {0x1a1143c0, 0x2, 0x2}, 0x16e56014)
+	internal/poll/fd_windows.go:810 +0x7d
+internal/poll.(*FD).Accept(0x16e56000, 0x1851ee98)
+	internal/poll/fd_windows.go:844 +0x193
+net.(*netFD).accept(0x16e56000)
+	net/fd_windows.go:139 +0x66
+net.(*TCPListener).accept(0x16f70120)
+	net/tcpsock_posix.go:140 +0x27
+net.(*TCPListener).Accept(0x16f70120)
+	net/tcpsock.go:262 +0x37
+net/http.(*Server).Serve(0x182e8090, {0x2c6f690, 0x16f70120})
+	net/http/server.go:3002 +0x2fd
+net/http.(*Server).ListenAndServe(0x182e8090)
+	net/http/server.go:2931 +0xa4
+git.gobies.org/goby/goby/api.StartAPIServer.func1()
+	git.gobies.org/goby/goby/api/api.go:293 +0x32
+created by git.gobies.org/goby/goby/api.StartAPIServer
+	git.gobies.org/goby/goby/api/api.go:285 +0x189
+
+goroutine 83 [select, 14 minutes]:
+database/sql.(*DB).connectionOpener(0x16db62d0, {0x2c70064, 0x1aa9f4d0})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 120 [IO wait, 5 minutes]:
+internal/poll.runtime_pollWait(0x3953d6e8, 0x72)
+	runtime/netpoll.go:303 +0x52
+internal/poll.(*pollDesc).wait(0x168bc514, 0x72, 0x0)
+	internal/poll/fd_poll_runtime.go:84 +0x37
+internal/poll.execIO(0x168bc434, 0x29c5c24)
+	internal/poll/fd_windows.go:175 +0xfc
+internal/poll.(*FD).Read(0x168bc420, {0x17c5b000, 0x1000, 0x1000})
+	internal/poll/fd_windows.go:441 +0x12b
+net.(*netFD).Read(0x168bc420, {0x17c5b000, 0x1000, 0x1000})
+	net/fd_posix.go:56 +0x3f
+net.(*conn).Read(0x19b608b0, {0x17c5b000, 0x1000, 0x1000})
+	net/net.go:183 +0x4f
+net/http.(*connReader).Read(0x19f6b0e0, {0x17c5b000, 0x1000, 0x1000})
+	net/http/server.go:780 +0x133
+bufio.(*Reader).fill(0x1903e180)
+	bufio/bufio.go:101 +0xe9
+bufio.(*Reader).ReadSlice(0x1903e180, 0xa)
+	bufio/bufio.go:360 +0x32
+bufio.(*Reader).ReadLine(0x1903e180)
+	bufio/bufio.go:389 +0x2a
+net/textproto.(*Reader).readLineSlice(0x1852a360)
+	net/textproto/reader.go:57 +0x75
+net/textproto.(*Reader).ReadLine(...)
+	net/textproto/reader.go:38
+net/http.readRequest(0x1903e180)
+	net/http/request.go:1029 +0x8c
+net/http.(*conn).readRequest(0x19c8af60, {0x2c70064, 0x1a51e630})
+	net/http/server.go:966 +0x284
+net/http.(*conn).serve(0x19c8af60, {0x2c700c4, 0x1a72c3c0})
+	net/http/server.go:1856 +0x90f
+created by net/http.(*Server).Serve
+	net/http/server.go:3034 +0x428
+
+goroutine 102 [IO wait, 5 minutes]:
+internal/poll.runtime_pollWait(0x3953d784, 0x72)
+	runtime/netpoll.go:303 +0x52
+internal/poll.(*pollDesc).wait(0x1795cd54, 0x72, 0x0)
+	internal/poll/fd_poll_runtime.go:84 +0x37
+internal/poll.execIO(0x1795cc74, 0x29c5c24)
+	internal/poll/fd_windows.go:175 +0xfc
+internal/poll.(*FD).Read(0x1795cc60, {0x18273000, 0x1000, 0x1000})
+	internal/poll/fd_windows.go:441 +0x12b
+net.(*netFD).Read(0x1795cc60, {0x18273000, 0x1000, 0x1000})
+	net/fd_posix.go:56 +0x3f
+net.(*conn).Read(0x188e0a38, {0x18273000, 0x1000, 0x1000})
+	net/net.go:183 +0x4f
+net/http.(*connReader).Read(0x19889660, {0x18273000, 0x1000, 0x1000})
+	net/http/server.go:780 +0x133
+bufio.(*Reader).fill(0x1902e030)
+	bufio/bufio.go:101 +0xe9
+bufio.(*Reader).ReadSlice(0x1902e030, 0xa)
+	bufio/bufio.go:360 +0x32
+bufio.(*Reader).ReadLine(0x1902e030)
+	bufio/bufio.go:389 +0x2a
+net/textproto.(*Reader).readLineSlice(0x1852a4c8)
+	net/textproto/reader.go:57 +0x75
+net/textproto.(*Reader).ReadLine(...)
+	net/textproto/reader.go:38
+net/http.readRequest(0x1902e030)
+	net/http/request.go:1029 +0x8c
+net/http.(*conn).readRequest(0x19ee1080, {0x2c70064, 0x1923f8c0})
+	net/http/server.go:966 +0x284
+net/http.(*conn).serve(0x19ee1080, {0x2c700c4, 0x1a72c3c0})
+	net/http/server.go:1856 +0x90f
+created by net/http.(*Server).Serve
+	net/http/server.go:3034 +0x428
+
+goroutine 3193 [select]:
+net/http.(*persistConn).writeLoop(0x196da3c0)
+	net/http/transport.go:2386 +0xd0
+created by net/http.(*Transport).dialConn
+	net/http/transport.go:1748 +0x1a39
+
+goroutine 6742 [select]:
+database/sql.(*DB).connectionOpener(0x19886120, {0x2c70064, 0x19c9c4e0})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 6988 [select]:
+git.gobies.org/goby/goscanner/jsonvul.(*ScanBruteForce).BruteCheck(0x1759a288, 0x18966f18, 0x19de0540, 0x19de05b0)
+	git.gobies.org/goby/goscanner@v0.0.0-20220704014506-a33f6132d645/jsonvul/scanbrute.go:236 +0x172
+git.gobies.org/goby/goscanner/jsonvul.(*ScanSteps).ExecuteStep(0x18966f18, 0x19de0540, 0x1759a1e0, 0x19de05b0)
+	git.gobies.org/goby/goscanner@v0.0.0-20220704014506-a33f6132d645/jsonvul/scansteps.go:236 +0x21c
+git.gobies.org/goby/goscanner/jsonvul.(*ScanSteps).ExcuteScansteps(0x18966f18, 0x19de0540, 0x19de05b0)
+	git.gobies.org/goby/goscanner@v0.0.0-20220704014506-a33f6132d645/jsonvul/scansteps.go:302 +0x9a
+git.gobies.org/goby/goscanner/jsonvul.(*JsonVul).DoScanSteps(0x18966f00, 0x19de0540, 0x19de05b0)
+	git.gobies.org/goby/goscanner@v0.0.0-20220704014506-a33f6132d645/jsonvul/jsonvul.go:322 +0x3a
+git.gobies.org/goby/goscanner/jsonvul.(*JsonVul).Vulnerable(0x18966f00, 0x19de0540, 0x19de05b0)
+	git.gobies.org/goby/goscanner@v0.0.0-20220704014506-a33f6132d645/jsonvul/jsonvul.go:346 +0x70
+git.gobies.org/goby/goscanner/jsonvul.(*JsonVul).DoScanOneHost(0x18966f00, {0x2c70064, 0x1a728570}, 0x19de0540, 0x1aa53dd0, 0x19ace520, 0x0)
+	git.gobies.org/goby/goscanner@v0.0.0-20220704014506-a33f6132d645/jsonvul/jsonvul.go:530 +0x63
+git.gobies.org/goby/goscanner/jsonvul.(*JsonVul).Scan.func1(0x19de0540, 0x1aa53dd0)
+	git.gobies.org/goby/goscanner@v0.0.0-20220704014506-a33f6132d645/jsonvul/jsonvul.go:553 +0x9e
+git.gobies.org/goby/goscanner/jsonvul.(*JsonVul).DoWork.func1(0x19ace530, 0x1aa53db8, 0x19d14040, 0x19547680, 0x1aa53dd0)
+	git.gobies.org/goby/goscanner@v0.0.0-20220704014506-a33f6132d645/jsonvul/jsonvul.go:462 +0x65
+created by git.gobies.org/goby/goscanner/jsonvul.(*JsonVul).DoWork
+	git.gobies.org/goby/goscanner@v0.0.0-20220704014506-a33f6132d645/jsonvul/jsonvul.go:456 +0x1ea
+
+goroutine 167 [select, 2 minutes]:
+database/sql.(*DB).connectionOpener(0x18b02630, {0x2c70064, 0x1a37a780})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 168 [select]:
+github.com/patrickmn/go-cache.(*janitor).Run(0x187d55f0, 0x1a37a8a0)
+	github.com/patrickmn/go-cache@v2.1.0+incompatible/cache.go:1079 +0xaa
+created by github.com/patrickmn/go-cache.runJanitor
+	github.com/patrickmn/go-cache@v2.1.0+incompatible/cache.go:1099 +0xb4
+
+goroutine 169 [select, 2 minutes]:
+git.gobies.org/goby/goscanner.(*FofaScanner).Start(0x19c7edc0)
+	git.gobies.org/goby/goscanner@v0.0.0-20220704014506-a33f6132d645/goscanner.go:410 +0x1ac
+git.gobies.org/goby/goby.(*GobyScanner).ScanVuls(0x18a0c100, 0x0)
+	git.gobies.org/goby/goby/goby_vul_scanner.go:318 +0x95
+git.gobies.org/goby/goby.(*GobyScanner).Start(0x18a0c100, {0x0, 0x0, 0x0})
+	git.gobies.org/goby/goby/goby.go:273 +0x401
+git.gobies.org/goby/goby/api.resumeScanHandler.func2()
+	git.gobies.org/goby/goby/api/resumeScan.go:94 +0x3b
+created by git.gobies.org/goby/goby/api.resumeScanHandler
+	git.gobies.org/goby/goby/api/resumeScan.go:93 +0x74c
+
+goroutine 1215 [select, 2 minutes]:
+git.gobies.org/goby/goscanner.(*FofaScanner).startCtx(0x19c7edc0, {0x2c700a4, 0x173c4340}, 0x174d8f40)
+	git.gobies.org/goby/goscanner@v0.0.0-20220704014506-a33f6132d645/goscanner.go:386 +0x145
+created by git.gobies.org/goby/goscanner.(*FofaScanner).Start
+	git.gobies.org/goby/goscanner@v0.0.0-20220704014506-a33f6132d645/goscanner.go:408 +0x127
+
+goroutine 6970 [select]:
+net/http.(*persistConn).writeLoop(0x16933b80)
+	net/http/transport.go:2386 +0xd0
+created by net/http.(*Transport).dialConn
+	net/http/transport.go:1748 +0x1a39
+
+goroutine 183 [select]:
+git.gobies.org/goby/goby.(*GobyScanner).printStatus(0x18a0c100, 0x1a2d2100)
+	git.gobies.org/goby/goby/goby_base.go:89 +0x105
+created by git.gobies.org/goby/goby.(*GobyScanner).Start
+	git.gobies.org/goby/goby/goby.go:260 +0x2fe
+
+goroutine 6866 [select]:
+database/sql.(*DB).connectionOpener(0x19651dd0, {0x2c70064, 0x19d2c8a0})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 6722 [select]:
+database/sql.(*DB).connectionOpener(0x195ac240, {0x2c70064, 0x197f0d80})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 5312 [select]:
+database/sql.(*DB).connectionOpener(0x18fecfc0, {0x2c70064, 0x199cc570})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 5274 [select]:
+database/sql.(*DB).connectionOpener(0x1aece1b0, {0x2c70064, 0x1884a660})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 4328 [IO wait, 2 minutes]:
+internal/poll.runtime_pollWait(0x394f503c, 0x72)
+	runtime/netpoll.go:303 +0x52
+internal/poll.(*pollDesc).wait(0x19d2f594, 0x72, 0x0)
+	internal/poll/fd_poll_runtime.go:84 +0x37
+internal/poll.execIO(0x19d2f4b4, 0x29c5c24)
+	internal/poll/fd_windows.go:175 +0xfc
+internal/poll.(*FD).Read(0x19d2f4a0, {0x1a931000, 0x7c7, 0x7c7})
+	internal/poll/fd_windows.go:441 +0x12b
+net.(*netFD).Read(0x19d2f4a0, {0x1a931000, 0x7c7, 0x7c7})
+	net/fd_posix.go:56 +0x3f
+net.(*conn).Read(0x16cdfc78, {0x1a931000, 0x7c7, 0x7c7})
+	net/net.go:183 +0x4f
+crypto/tls.(*atLeastReader).Read(0x1a56a290, {0x1a931000, 0x7c7, 0x7c7})
+	crypto/tls/conn.go:778 +0x63
+bytes.(*Buffer).ReadFrom(0x1a82f36c, {0x2c59c5c, 0x1a56a290})
+	bytes/buffer.go:204 +0x95
+crypto/tls.(*Conn).readFromUntil(0x1a82f200, {0x2c5d3d4, 0x16cdfc78}, 0x5)
+	crypto/tls/conn.go:800 +0xdd
+crypto/tls.(*Conn).readRecordOrCCS(0x1a82f200, 0x0)
+	crypto/tls/conn.go:607 +0x11a
+crypto/tls.(*Conn).readRecord(...)
+	crypto/tls/conn.go:575
+crypto/tls.(*Conn).Read(0x1a82f200, {0x1a66f000, 0x1000, 0x1000})
+	crypto/tls/conn.go:1278 +0x131
+net/http.(*persistConn).Read(0x196dabe0, {0x1a66f000, 0x1000, 0x1000})
+	net/http/transport.go:1926 +0x141
+bufio.(*Reader).fill(0x187aab70)
+	bufio/bufio.go:101 +0xe9
+bufio.(*Reader).Peek(0x187aab70, 0x1)
+	bufio/bufio.go:139 +0x6d
+net/http.(*persistConn).readLoop(0x196dabe0)
+	net/http/transport.go:2087 +0x18a
+created by net/http.(*Transport).dialConn
+	net/http/transport.go:1747 +0x1a18
+
+goroutine 3786 [select, 2 minutes]:
+net/http.(*persistConn).writeLoop(0x1848afa0)
+	net/http/transport.go:2386 +0xd0
+created by net/http.(*Transport).dialConn
+	net/http/transport.go:1748 +0x1a39
+
+goroutine 3750 [IO wait, 2 minutes]:
+internal/poll.runtime_pollWait(0x3953d208, 0x72)
+	runtime/netpoll.go:303 +0x52
+internal/poll.(*pollDesc).wait(0x195b7f34, 0x72, 0x0)
+	internal/poll/fd_poll_runtime.go:84 +0x37
+internal/poll.execIO(0x195b7e54, 0x29c5c24)
+	internal/poll/fd_windows.go:175 +0xfc
+internal/poll.(*FD).Read(0x195b7e40, {0x1a485000, 0x1000, 0x1000})
+	internal/poll/fd_windows.go:441 +0x12b
+net.(*netFD).Read(0x195b7e40, {0x1a485000, 0x1000, 0x1000})
+	net/fd_posix.go:56 +0x3f
+net.(*conn).Read(0x19ff2370, {0x1a485000, 0x1000, 0x1000})
+	net/net.go:183 +0x4f
+net/http.(*persistConn).Read(0x198bcd20, {0x1a485000, 0x1000, 0x1000})
+	net/http/transport.go:1926 +0x141
+bufio.(*Reader).fill(0x1a405c50)
+	bufio/bufio.go:101 +0xe9
+bufio.(*Reader).Peek(0x1a405c50, 0x1)
+	bufio/bufio.go:139 +0x6d
+net/http.(*persistConn).readLoop(0x198bcd20)
+	net/http/transport.go:2087 +0x18a
+created by net/http.(*Transport).dialConn
+	net/http/transport.go:1747 +0x1a18
+
+goroutine 6793 [select]:
+database/sql.(*DB).connectionOpener(0x1aece510, {0x2c70064, 0x1884a6f0})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 6762 [select]:
+database/sql.(*DB).connectionOpener(0x19651050, {0x2c70064, 0x199bf440})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 6772 [select]:
+database/sql.(*DB).connectionOpener(0x18e54990, {0x2c70064, 0x1a5dc900})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 3751 [select, 2 minutes]:
+net/http.(*persistConn).writeLoop(0x198bcd20)
+	net/http/transport.go:2386 +0xd0
+created by net/http.(*Transport).dialConn
+	net/http/transport.go:1748 +0x1a39
+
+goroutine 6884 [select]:
+net/http.(*persistConn).writeLoop(0x19e5b040)
+	net/http/transport.go:2386 +0xd0
+created by net/http.(*Transport).dialConn
+	net/http/transport.go:1748 +0x1a39
+
+goroutine 6811 [select]:
+database/sql.(*DB).connectionOpener(0x19876360, {0x2c70064, 0x19c89410})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 4179 [IO wait, 2 minutes]:
+internal/poll.runtime_pollWait(0x3953e4d8, 0x72)
+	runtime/netpoll.go:303 +0x52
+internal/poll.(*pollDesc).wait(0x1a0f6eb4, 0x72, 0x0)
+	internal/poll/fd_poll_runtime.go:84 +0x37
+internal/poll.execIO(0x1a0f6dd4, 0x29c5c24)
+	internal/poll/fd_windows.go:175 +0xfc
+internal/poll.(*FD).Read(0x1a0f6dc0, {0x1a8ab000, 0x1000, 0x1000})
+	internal/poll/fd_windows.go:441 +0x12b
+net.(*netFD).Read(0x1a0f6dc0, {0x1a8ab000, 0x1000, 0x1000})
+	net/fd_posix.go:56 +0x3f
+net.(*conn).Read(0x182d6a48, {0x1a8ab000, 0x1000, 0x1000})
+	net/net.go:183 +0x4f
+net/http.(*persistConn).Read(0x1a15a820, {0x1a8ab000, 0x1000, 0x1000})
+	net/http/transport.go:1926 +0x141
+bufio.(*Reader).fill(0x19eaf800)
+	bufio/bufio.go:101 +0xe9
+bufio.(*Reader).Peek(0x19eaf800, 0x1)
+	bufio/bufio.go:139 +0x6d
+net/http.(*persistConn).readLoop(0x1a15a820)
+	net/http/transport.go:2087 +0x18a
+created by net/http.(*Transport).dialConn
+	net/http/transport.go:1747 +0x1a18
+
+goroutine 3416 [IO wait, 2 minutes]:
+internal/poll.runtime_pollWait(0x3953d478, 0x72)
+	runtime/netpoll.go:303 +0x52
+internal/poll.(*pollDesc).wait(0x19635174, 0x72, 0x0)
+	internal/poll/fd_poll_runtime.go:84 +0x37
+internal/poll.execIO(0x19635094, 0x29c5c24)
+	internal/poll/fd_windows.go:175 +0xfc
+internal/poll.(*FD).Read(0x19635080, {0x1a0b0800, 0x7c7, 0x7c7})
+	internal/poll/fd_windows.go:441 +0x12b
+net.(*netFD).Read(0x19635080, {0x1a0b0800, 0x7c7, 0x7c7})
+	net/fd_posix.go:56 +0x3f
+net.(*conn).Read(0x1a257ff0, {0x1a0b0800, 0x7c7, 0x7c7})
+	net/net.go:183 +0x4f
+crypto/tls.(*atLeastReader).Read(0x17582870, {0x1a0b0800, 0x7c7, 0x7c7})
+	crypto/tls/conn.go:778 +0x63
+bytes.(*Buffer).ReadFrom(0x19c5c36c, {0x2c59c5c, 0x17582870})
+	bytes/buffer.go:204 +0x95
+crypto/tls.(*Conn).readFromUntil(0x19c5c200, {0x2c5d3d4, 0x1a257ff0}, 0x5)
+	crypto/tls/conn.go:800 +0xdd
+crypto/tls.(*Conn).readRecordOrCCS(0x19c5c200, 0x0)
+	crypto/tls/conn.go:607 +0x11a
+crypto/tls.(*Conn).readRecord(...)
+	crypto/tls/conn.go:575
+crypto/tls.(*Conn).Read(0x19c5c200, {0x1966d000, 0x1000, 0x1000})
+	crypto/tls/conn.go:1278 +0x131
+net/http.(*persistConn).Read(0x1a6fdc20, {0x1966d000, 0x1000, 0x1000})
+	net/http/transport.go:1926 +0x141
+bufio.(*Reader).fill(0x1a405650)
+	bufio/bufio.go:101 +0xe9
+bufio.(*Reader).Peek(0x1a405650, 0x1)
+	bufio/bufio.go:139 +0x6d
+net/http.(*persistConn).readLoop(0x1a6fdc20)
+	net/http/transport.go:2087 +0x18a
+created by net/http.(*Transport).dialConn
+	net/http/transport.go:1747 +0x1a18
+
+goroutine 6969 [IO wait]:
+internal/poll.runtime_pollWait(0x394f47b4, 0x72)
+	runtime/netpoll.go:303 +0x52
+internal/poll.(*pollDesc).wait(0x1854b854, 0x72, 0x0)
+	internal/poll/fd_poll_runtime.go:84 +0x37
+internal/poll.execIO(0x1854b774, 0x29c5c24)
+	internal/poll/fd_windows.go:175 +0xfc
+internal/poll.(*FD).Read(0x1854b760, {0x19c32000, 0x1000, 0x1000})
+	internal/poll/fd_windows.go:441 +0x12b
+net.(*netFD).Read(0x1854b760, {0x19c32000, 0x1000, 0x1000})
+	net/fd_posix.go:56 +0x3f
+net.(*conn).Read(0x1988fe88, {0x19c32000, 0x1000, 0x1000})
+	net/net.go:183 +0x4f
+net/http.(*persistConn).Read(0x16933b80, {0x19c32000, 0x1000, 0x1000})
+	net/http/transport.go:1926 +0x141
+bufio.(*Reader).fill(0x19b30c30)
+	bufio/bufio.go:101 +0xe9
+bufio.(*Reader).Peek(0x19b30c30, 0x1)
+	bufio/bufio.go:139 +0x6d
+net/http.(*persistConn).readLoop(0x16933b80)
+	net/http/transport.go:2087 +0x18a
+created by net/http.(*Transport).dialConn
+	net/http/transport.go:1747 +0x1a18
+
+goroutine 6830 [select]:
+database/sql.(*DB).connectionOpener(0x19651cb0, {0x2c70064, 0x19d2c630})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 6463 [select]:
+database/sql.(*DB).connectionOpener(0x19650cf0, {0x2c70064, 0x199bf3b0})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 1294 [IO wait, 2 minutes]:
+internal/poll.runtime_pollWait(0x3953d034, 0x72)
+	runtime/netpoll.go:303 +0x52
+internal/poll.(*pollDesc).wait(0x19cfc254, 0x72, 0x0)
+	internal/poll/fd_poll_runtime.go:84 +0x37
+internal/poll.execIO(0x19cfc174, 0x29c5c24)
+	internal/poll/fd_windows.go:175 +0xfc
+internal/poll.(*FD).Read(0x19cfc160, {0x1a0b0000, 0x7c7, 0x7c7})
+	internal/poll/fd_windows.go:441 +0x12b
+net.(*netFD).Read(0x19cfc160, {0x1a0b0000, 0x7c7, 0x7c7})
+	net/fd_posix.go:56 +0x3f
+net.(*conn).Read(0x1a257fd0, {0x1a0b0000, 0x7c7, 0x7c7})
+	net/net.go:183 +0x4f
+crypto/tls.(*atLeastReader).Read(0x187b6b70, {0x1a0b0000, 0x7c7, 0x7c7})
+	crypto/tls/conn.go:778 +0x63
+bytes.(*Buffer).ReadFrom(0x19c5c16c, {0x2c59c5c, 0x187b6b70})
+	bytes/buffer.go:204 +0x95
+crypto/tls.(*Conn).readFromUntil(0x19c5c000, {0x2c5d3d4, 0x1a257fd0}, 0x5)
+	crypto/tls/conn.go:800 +0xdd
+crypto/tls.(*Conn).readRecordOrCCS(0x19c5c000, 0x0)
+	crypto/tls/conn.go:607 +0x11a
+crypto/tls.(*Conn).readRecord(...)
+	crypto/tls/conn.go:575
+crypto/tls.(*Conn).Read(0x19c5c000, {0x1a16c000, 0x1000, 0x1000})
+	crypto/tls/conn.go:1278 +0x131
+net/http.(*persistConn).Read(0x19cde280, {0x1a16c000, 0x1000, 0x1000})
+	net/http/transport.go:1926 +0x141
+bufio.(*Reader).fill(0x19e92810)
+	bufio/bufio.go:101 +0xe9
+bufio.(*Reader).Peek(0x19e92810, 0x1)
+	bufio/bufio.go:139 +0x6d
+net/http.(*persistConn).readLoop(0x19cde280)
+	net/http/transport.go:2087 +0x18a
+created by net/http.(*Transport).dialConn
+	net/http/transport.go:1747 +0x1a18
+
+goroutine 6654 [select]:
+database/sql.(*DB).connectionOpener(0x18b03e60, {0x2c70064, 0x19c9c480})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 6796 [select]:
+database/sql.(*DB).connectionOpener(0x1aece630, {0x2c70064, 0x1884a720})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 3785 [IO wait, 2 minutes]:
+internal/poll.runtime_pollWait(0x3953d64c, 0x72)
+	runtime/netpoll.go:303 +0x52
+internal/poll.(*pollDesc).wait(0x168999b4, 0x72, 0x0)
+	internal/poll/fd_poll_runtime.go:84 +0x37
+internal/poll.execIO(0x168998d4, 0x29c5c24)
+	internal/poll/fd_windows.go:175 +0xfc
+internal/poll.(*FD).Read(0x168998c0, {0x1a04a000, 0x7c7, 0x7c7})
+	internal/poll/fd_windows.go:441 +0x12b
+net.(*netFD).Read(0x168998c0, {0x1a04a000, 0x7c7, 0x7c7})
+	net/fd_posix.go:56 +0x3f
+net.(*conn).Read(0x1a494a18, {0x1a04a000, 0x7c7, 0x7c7})
+	net/net.go:183 +0x4f
+crypto/tls.(*atLeastReader).Read(0x17cfc9e0, {0x1a04a000, 0x7c7, 0x7c7})
+	crypto/tls/conn.go:778 +0x63
+bytes.(*Buffer).ReadFrom(0x1a36856c, {0x2c59c5c, 0x17cfc9e0})
+	bytes/buffer.go:204 +0x95
+crypto/tls.(*Conn).readFromUntil(0x1a368400, {0x2c5d3d4, 0x1a494a18}, 0x5)
+	crypto/tls/conn.go:800 +0xdd
+crypto/tls.(*Conn).readRecordOrCCS(0x1a368400, 0x0)
+	crypto/tls/conn.go:607 +0x11a
+crypto/tls.(*Conn).readRecord(...)
+	crypto/tls/conn.go:575
+crypto/tls.(*Conn).Read(0x1a368400, {0x1a423000, 0x1000, 0x1000})
+	crypto/tls/conn.go:1278 +0x131
+net/http.(*persistConn).Read(0x1848afa0, {0x1a423000, 0x1000, 0x1000})
+	net/http/transport.go:1926 +0x141
+bufio.(*Reader).fill(0x19d82690)
+	bufio/bufio.go:101 +0xe9
+bufio.(*Reader).Peek(0x19d82690, 0x1)
+	bufio/bufio.go:139 +0x6d
+net/http.(*persistConn).readLoop(0x1848afa0)
+	net/http/transport.go:2087 +0x18a
+created by net/http.(*Transport).dialConn
+	net/http/transport.go:1747 +0x1a18
+
+goroutine 3887 [select, 2 minutes]:
+net/http.(*persistConn).writeLoop(0x1848b2c0)
+	net/http/transport.go:2386 +0xd0
+created by net/http.(*Transport).dialConn
+	net/http/transport.go:1748 +0x1a39
+
+goroutine 6701 [select]:
+database/sql.(*DB).connectionOpener(0x198d98c0, {0x2c70064, 0x19c88960})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 6758 [select]:
+database/sql.(*DB).connectionOpener(0x19650f30, {0x2c70064, 0x199bf410})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 4180 [select, 2 minutes]:
+net/http.(*persistConn).writeLoop(0x1a15a820)
+	net/http/transport.go:2386 +0xd0
+created by net/http.(*Transport).dialConn
+	net/http/transport.go:1748 +0x1a39
+
+goroutine 6818 [select]:
+database/sql.(*DB).connectionOpener(0x19651290, {0x2c70064, 0x199bf590})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 3886 [IO wait, 2 minutes]:
+internal/poll.runtime_pollWait(0x3953e9b8, 0x72)
+	runtime/netpoll.go:303 +0x52
+internal/poll.(*pollDesc).wait(0x1a5b23b4, 0x72, 0x0)
+	internal/poll/fd_poll_runtime.go:84 +0x37
+internal/poll.execIO(0x1a5b22d4, 0x29c5c24)
+	internal/poll/fd_windows.go:175 +0xfc
+internal/poll.(*FD).Read(0x1a5b22c0, {0x1a520000, 0x7c7, 0x7c7})
+	internal/poll/fd_windows.go:441 +0x12b
+net.(*netFD).Read(0x1a5b22c0, {0x1a520000, 0x7c7, 0x7c7})
+	net/fd_posix.go:56 +0x3f
+net.(*conn).Read(0x17deba98, {0x1a520000, 0x7c7, 0x7c7})
+	net/net.go:183 +0x4f
+crypto/tls.(*atLeastReader).Read(0x175838b0, {0x1a520000, 0x7c7, 0x7c7})
+	crypto/tls/conn.go:778 +0x63
+bytes.(*Buffer).ReadFrom(0x1a36916c, {0x2c59c5c, 0x175838b0})
+	bytes/buffer.go:204 +0x95
+crypto/tls.(*Conn).readFromUntil(0x1a369000, {0x2c5d3d4, 0x17deba98}, 0x5)
+	crypto/tls/conn.go:800 +0xdd
+crypto/tls.(*Conn).readRecordOrCCS(0x1a369000, 0x0)
+	crypto/tls/conn.go:607 +0x11a
+crypto/tls.(*Conn).readRecord(...)
+	crypto/tls/conn.go:575
+crypto/tls.(*Conn).Read(0x1a369000, {0x1a52c000, 0x1000, 0x1000})
+	crypto/tls/conn.go:1278 +0x131
+net/http.(*persistConn).Read(0x1848b2c0, {0x1a52c000, 0x1000, 0x1000})
+	net/http/transport.go:1926 +0x141
+bufio.(*Reader).fill(0x19e4b830)
+	bufio/bufio.go:101 +0xe9
+bufio.(*Reader).Peek(0x19e4b830, 0x1)
+	bufio/bufio.go:139 +0x6d
+net/http.(*persistConn).readLoop(0x1848b2c0)
+	net/http/transport.go:2087 +0x18a
+created by net/http.(*Transport).dialConn
+	net/http/transport.go:1747 +0x1a18
+
+goroutine 6803 [select]:
+database/sql.(*DB).connectionOpener(0x198d9b00, {0x2c70064, 0x19c889c0})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 6776 [select]:
+database/sql.(*DB).connectionOpener(0x18e54ab0, {0x2c70064, 0x1a5dc930})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 6883 [IO wait]:
+internal/poll.runtime_pollWait(0x394f4850, 0x72)
+	runtime/netpoll.go:303 +0x52
+internal/poll.(*pollDesc).wait(0x169119b4, 0x72, 0x0)
+	internal/poll/fd_poll_runtime.go:84 +0x37
+internal/poll.execIO(0x169118d4, 0x29c5c24)
+	internal/poll/fd_windows.go:175 +0xfc
+internal/poll.(*FD).Read(0x169118c0, {0x1aa4d000, 0x1000, 0x1000})
+	internal/poll/fd_windows.go:441 +0x12b
+net.(*netFD).Read(0x169118c0, {0x1aa4d000, 0x1000, 0x1000})
+	net/fd_posix.go:56 +0x3f
+net.(*conn).Read(0x19ace0b0, {0x1aa4d000, 0x1000, 0x1000})
+	net/net.go:183 +0x4f
+net/http.(*persistConn).Read(0x19e5b040, {0x1aa4d000, 0x1000, 0x1000})
+	net/http/transport.go:1926 +0x141
+bufio.(*Reader).fill(0x19d62270)
+	bufio/bufio.go:101 +0xe9
+bufio.(*Reader).Peek(0x19d62270, 0x1)
+	bufio/bufio.go:139 +0x6d
+net/http.(*persistConn).readLoop(0x19e5b040)
+	net/http/transport.go:2087 +0x18a
+created by net/http.(*Transport).dialConn
+	net/http/transport.go:1747 +0x1a18
+
+goroutine 5290 [select]:
+net/http.(*persistConn).writeLoop(0x19e5a1e0)
+	net/http/transport.go:2386 +0xd0
+created by net/http.(*Transport).dialConn
+	net/http/transport.go:1748 +0x1a39
+
+goroutine 6787 [select]:
+database/sql.(*DB).connectionOpener(0x1aece3f0, {0x2c70064, 0x1884a6c0})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 5307 [select]:
+database/sql.(*DB).connectionOpener(0x18fecea0, {0x2c70064, 0x199cc540})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 5280 [select]:
+database/sql.(*DB).connectionOpener(0x1aece2d0, {0x2c70064, 0x1884a690})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 6728 [select]:
+database/sql.(*DB).connectionOpener(0x195ac360, {0x2c70064, 0x197f0db0})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 5215 [select]:
+net/http.(*persistConn).writeLoop(0x19cdeb40)
+	net/http/transport.go:2386 +0xd0
+created by net/http.(*Transport).dialConn
+	net/http/transport.go:1748 +0x1a39
+
+goroutine 5289 [IO wait]:
+internal/poll.runtime_pollWait(0x394f4718, 0x72)
+	runtime/netpoll.go:303 +0x52
+internal/poll.(*pollDesc).wait(0x1a0f72d4, 0x72, 0x0)
+	internal/poll/fd_poll_runtime.go:84 +0x37
+internal/poll.execIO(0x1a0f71f4, 0x29c5c24)
+	internal/poll/fd_windows.go:175 +0xfc
+internal/poll.(*FD).Read(0x1a0f71e0, {0x18ad0800, 0x7c7, 0x7c7})
+	internal/poll/fd_windows.go:441 +0x12b
+net.(*netFD).Read(0x1a0f71e0, {0x18ad0800, 0x7c7, 0x7c7})
+	net/fd_posix.go:56 +0x3f
+net.(*conn).Read(0x18916b58, {0x18ad0800, 0x7c7, 0x7c7})
+	net/net.go:183 +0x4f
+crypto/tls.(*atLeastReader).Read(0x1a56b960, {0x18ad0800, 0x7c7, 0x7c7})
+	crypto/tls/conn.go:778 +0x63
+bytes.(*Buffer).ReadFrom(0x19c5db6c, {0x2c59c5c, 0x1a56b960})
+	bytes/buffer.go:204 +0x95
+crypto/tls.(*Conn).readFromUntil(0x19c5da00, {0x2c5d3d4, 0x18916b58}, 0x5)
+	crypto/tls/conn.go:800 +0xdd
+crypto/tls.(*Conn).readRecordOrCCS(0x19c5da00, 0x0)
+	crypto/tls/conn.go:607 +0x11a
+crypto/tls.(*Conn).readRecord(...)
+	crypto/tls/conn.go:575
+crypto/tls.(*Conn).Read(0x19c5da00, {0x1af18000, 0x1000, 0x1000})
+	crypto/tls/conn.go:1278 +0x131
+net/http.(*persistConn).Read(0x19e5a1e0, {0x1af18000, 0x1000, 0x1000})
+	net/http/transport.go:1926 +0x141
+bufio.(*Reader).fill(0x19d890e0)
+	bufio/bufio.go:101 +0xe9
+bufio.(*Reader).Peek(0x19d890e0, 0x1)
+	bufio/bufio.go:139 +0x6d
+net/http.(*persistConn).readLoop(0x19e5a1e0)
+	net/http/transport.go:2087 +0x18a
+created by net/http.(*Transport).dialConn
+	net/http/transport.go:1747 +0x1a18
+
+goroutine 5168 [select]:
+database/sql.(*DB).connectionOpener(0x18e54870, {0x2c70064, 0x1a5dc8d0})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 6703 [select]:
+database/sql.(*DB).connectionOpener(0x198d99e0, {0x2c70064, 0x19c88990})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 3298 [IO wait, 2 minutes]:
+internal/poll.runtime_pollWait(0x3953cb54, 0x72)
+	runtime/netpoll.go:303 +0x52
+internal/poll.(*pollDesc).wait(0x168992d4, 0x72, 0x0)
+	internal/poll/fd_poll_runtime.go:84 +0x37
+internal/poll.execIO(0x168991f4, 0x29c5c24)
+	internal/poll/fd_windows.go:175 +0xfc
+internal/poll.(*FD).Read(0x168991e0, {0x19663000, 0x1000, 0x1000})
+	internal/poll/fd_windows.go:441 +0x12b
+net.(*netFD).Read(0x168991e0, {0x19663000, 0x1000, 0x1000})
+	net/fd_posix.go:56 +0x3f
+net.(*conn).Read(0x189605d0, {0x19663000, 0x1000, 0x1000})
+	net/net.go:183 +0x4f
+net/http.(*persistConn).Read(0x1848a6e0, {0x19663000, 0x1000, 0x1000})
+	net/http/transport.go:1926 +0x141
+bufio.(*Reader).fill(0x1a404ae0)
+	bufio/bufio.go:101 +0xe9
+bufio.(*Reader).Peek(0x1a404ae0, 0x1)
+	bufio/bufio.go:139 +0x6d
+net/http.(*persistConn).readLoop(0x1848a6e0)
+	net/http/transport.go:2087 +0x18a
+created by net/http.(*Transport).dialConn
+	net/http/transport.go:1747 +0x1a18
+
+goroutine 5214 [IO wait]:
+internal/poll.runtime_pollWait(0x394f4370, 0x72)
+	runtime/netpoll.go:303 +0x52
+internal/poll.(*pollDesc).wait(0x194d79b4, 0x72, 0x0)
+	internal/poll/fd_poll_runtime.go:84 +0x37
+internal/poll.execIO(0x194d78d4, 0x29c5c24)
+	internal/poll/fd_windows.go:175 +0xfc
+internal/poll.(*FD).Read(0x194d78c0, {0x1825e800, 0x7c7, 0x7c7})
+	internal/poll/fd_windows.go:441 +0x12b
+net.(*netFD).Read(0x194d78c0, {0x1825e800, 0x7c7, 0x7c7})
+	net/fd_posix.go:56 +0x3f
+net.(*conn).Read(0x18916960, {0x1825e800, 0x7c7, 0x7c7})
+	net/net.go:183 +0x4f
+crypto/tls.(*atLeastReader).Read(0x1ad28370, {0x1825e800, 0x7c7, 0x7c7})
+	crypto/tls/conn.go:778 +0x63
+bytes.(*Buffer).ReadFrom(0x19c5d96c, {0x2c59c5c, 0x1ad28370})
+	bytes/buffer.go:204 +0x95
+crypto/tls.(*Conn).readFromUntil(0x19c5d800, {0x2c5d3d4, 0x18916960}, 0x5)
+	crypto/tls/conn.go:800 +0xdd
+crypto/tls.(*Conn).readRecordOrCCS(0x19c5d800, 0x0)
+	crypto/tls/conn.go:607 +0x11a
+crypto/tls.(*Conn).readRecord(...)
+	crypto/tls/conn.go:575
+crypto/tls.(*Conn).Read(0x19c5d800, {0x1aa3e000, 0x1000, 0x1000})
+	crypto/tls/conn.go:1278 +0x131
+net/http.(*persistConn).Read(0x19cdeb40, {0x1aa3e000, 0x1000, 0x1000})
+	net/http/transport.go:1926 +0x141
+bufio.(*Reader).fill(0x19edd980)
+	bufio/bufio.go:101 +0xe9
+bufio.(*Reader).Peek(0x19edd980, 0x1)
+	bufio/bufio.go:139 +0x6d
+net/http.(*persistConn).readLoop(0x19cdeb40)
+	net/http/transport.go:2087 +0x18a
+created by net/http.(*Transport).dialConn
+	net/http/transport.go:1747 +0x1a18
+
+goroutine 5271 [select]:
+database/sql.(*DB).connectionOpener(0x1aece090, {0x2c70064, 0x1884a630})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 6739 [select]:
+database/sql.(*DB).connectionOpener(0x19886000, {0x2c70064, 0x19c9c4b0})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 6779 [select]:
+database/sql.(*DB).connectionOpener(0x18e54bd0, {0x2c70064, 0x1a5dc960})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 3192 [IO wait]:
+internal/poll.runtime_pollWait(0x394f4d30, 0x72)
+	runtime/netpoll.go:303 +0x52
+internal/poll.(*pollDesc).wait(0x1ab8cbf4, 0x72, 0x0)
+	internal/poll/fd_poll_runtime.go:84 +0x37
+internal/poll.execIO(0x1ab8cb14, 0x29c5c24)
+	internal/poll/fd_windows.go:175 +0xfc
+internal/poll.(*FD).Read(0x1ab8cb00, {0x1b020000, 0x1000, 0x1000})
+	internal/poll/fd_windows.go:441 +0x12b
+net.(*netFD).Read(0x1ab8cb00, {0x1b020000, 0x1000, 0x1000})
+	net/fd_posix.go:56 +0x3f
+net.(*conn).Read(0x19f7c000, {0x1b020000, 0x1000, 0x1000})
+	net/net.go:183 +0x4f
+net/http.(*persistConn).Read(0x196da3c0, {0x1b020000, 0x1000, 0x1000})
+	net/http/transport.go:1926 +0x141
+bufio.(*Reader).fill(0x19b4a000)
+	bufio/bufio.go:101 +0xe9
+bufio.(*Reader).Peek(0x19b4a000, 0x1)
+	bufio/bufio.go:139 +0x6d
+net/http.(*persistConn).readLoop(0x196da3c0)
+	net/http/transport.go:2087 +0x18a
+created by net/http.(*Transport).dialConn
+	net/http/transport.go:1747 +0x1a18
+
+goroutine 1295 [select, 2 minutes]:
+net/http.(*persistConn).writeLoop(0x19cde280)
+	net/http/transport.go:2386 +0xd0
+created by net/http.(*Transport).dialConn
+	net/http/transport.go:1748 +0x1a39
+
+goroutine 6697 [select]:
+database/sql.(*DB).connectionOpener(0x198d97a0, {0x2c70064, 0x19c88930})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 6215 [chan send]:
+git.gobies.org/goby/goscanner/jsonvul.(*ScanBruteForce).bruteOne(0x18488468, 0x188e94b8, 0x1899d1f0, 0x191b3a10, 0x188085c0, 0x16d9ff10, 0x1aa20f00)
+	git.gobies.org/goby/goscanner@v0.0.0-20220704014506-a33f6132d645/jsonvul/scanbrute.go:223 +0x96f
+created by git.gobies.org/goby/goscanner/jsonvul.(*ScanBruteForce).BruteCheck
+	git.gobies.org/goby/goscanner@v0.0.0-20220704014506-a33f6132d645/jsonvul/scanbrute.go:234 +0xf3
+
+goroutine 6707 [select]:
+database/sql.(*DB).connectionOpener(0x1a70def0, {0x2c70064, 0x19a127b0})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 5162 [select]:
+database/sql.(*DB).connectionOpener(0x18e54750, {0x2c70064, 0x1a5dc8a0})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 3845 [select, 2 minutes]:
+net/http.(*persistConn).writeLoop(0x19e5a780)
+	net/http/transport.go:2386 +0xd0
+created by net/http.(*Transport).dialConn
+	net/http/transport.go:1748 +0x1a39
+
+goroutine 1216 [semacquire]:
+sync.runtime_Semacquire(0x19547688)
+	runtime/sema.go:56 +0x36
+sync.(*WaitGroup).Wait(0x19547680)
+	sync/waitgroup.go:130 +0x87
+git.gobies.org/goby/goscanner/jsonvul.(*JsonVul).DoWork(0x18966f00, 0x19d14000, 0x1aa53db8, 0x1a2be6e0)
+	git.gobies.org/goby/goscanner@v0.0.0-20220704014506-a33f6132d645/jsonvul/jsonvul.go:470 +0x204
+git.gobies.org/goby/goscanner/jsonvul.(*JsonVul).Scan(0x18966f00, {0x2c70064, 0x1a728570}, 0x19d14000, 0x19ace520, 0x1a2be6e0, 0x0)
+	git.gobies.org/goby/goscanner@v0.0.0-20220704014506-a33f6132d645/jsonvul/jsonvul.go:547 +0x167
+git.gobies.org/goby/goscanner.(*FofaScanner).scanExp(0x19c7edc0, {0x2c70064, 0x1a728570}, 0x18966f00, {0x0, 0x0})
+	git.gobies.org/goby/goscanner@v0.0.0-20220704014506-a33f6132d645/goscanner.go:299 +0x1b9
+git.gobies.org/goby/goscanner.(*FofaScanner).Scan(0x19c7edc0, {0x2c70064, 0x1a728570}, {0x0, 0x0})
+	git.gobies.org/goby/goscanner@v0.0.0-20220704014506-a33f6132d645/goscanner.go:311 +0x1e8
+git.gobies.org/goby/goscanner.(*FofaScanner).startCtx.func3(0x19c7edc0, {0x2c70064, 0x1a728570}, 0x174d9040)
+	git.gobies.org/goby/goscanner@v0.0.0-20220704014506-a33f6132d645/goscanner.go:380 +0x14e
+created by git.gobies.org/goby/goscanner.(*FofaScanner).startCtx
+	git.gobies.org/goby/goscanner@v0.0.0-20220704014506-a33f6132d645/goscanner.go:373 +0xd9
+
+goroutine 3299 [select, 2 minutes]:
+net/http.(*persistConn).writeLoop(0x1848a6e0)
+	net/http/transport.go:2386 +0xd0
+created by net/http.(*Transport).dialConn
+	net/http/transport.go:1748 +0x1a39
+
+goroutine 6754 [select]:
+database/sql.(*DB).connectionOpener(0x19650e10, {0x2c70064, 0x199bf3e0})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+
+goroutine 3417 [select, 2 minutes]:
+net/http.(*persistConn).writeLoop(0x1a6fdc20)
+	net/http/transport.go:2386 +0xd0
+created by net/http.(*Transport).dialConn
+	net/http/transport.go:1748 +0x1a39
+
+goroutine 4329 [select, 2 minutes]:
+net/http.(*persistConn).writeLoop(0x196dabe0)
+	net/http/transport.go:2386 +0xd0
+created by net/http.(*Transport).dialConn
+	net/http/transport.go:1748 +0x1a39
+
+goroutine 3844 [IO wait, 2 minutes]:
+internal/poll.runtime_pollWait(0x3953cc8c, 0x72)
+	runtime/netpoll.go:303 +0x52
+internal/poll.(*pollDesc).wait(0x1ab787d4, 0x72, 0x0)
+	internal/poll/fd_poll_runtime.go:84 +0x37
+internal/poll.execIO(0x1ab786f4, 0x29c5c24)
+	internal/poll/fd_windows.go:175 +0xfc
+internal/poll.(*FD).Read(0x1ab786e0, {0x194c5000, 0x7c7, 0x7c7})
+	internal/poll/fd_windows.go:441 +0x12b
+net.(*netFD).Read(0x1ab786e0, {0x194c5000, 0x7c7, 0x7c7})
+	net/fd_posix.go:56 +0x3f
+net.(*conn).Read(0x1a4069b0, {0x194c5000, 0x7c7, 0x7c7})
+	net/net.go:183 +0x4f
+crypto/tls.(*atLeastReader).Read(0x18783080, {0x194c5000, 0x7c7, 0x7c7})
+	crypto/tls/conn.go:778 +0x63
+bytes.(*Buffer).ReadFrom(0x1935b36c, {0x2c59c5c, 0x18783080})
+	bytes/buffer.go:204 +0x95
+crypto/tls.(*Conn).readFromUntil(0x1935b200, {0x2c5d3d4, 0x1a4069b0}, 0x5)
+	crypto/tls/conn.go:800 +0xdd
+crypto/tls.(*Conn).readRecordOrCCS(0x1935b200, 0x0)
+	crypto/tls/conn.go:607 +0x11a
+crypto/tls.(*Conn).readRecord(...)
+	crypto/tls/conn.go:575
+crypto/tls.(*Conn).Read(0x1935b200, {0x1a4d9000, 0x1000, 0x1000})
+	crypto/tls/conn.go:1278 +0x131
+net/http.(*persistConn).Read(0x19e5a780, {0x1a4d9000, 0x1000, 0x1000})
+	net/http/transport.go:1926 +0x141
+bufio.(*Reader).fill(0x19d88bd0)
+	bufio/bufio.go:101 +0xe9
+bufio.(*Reader).Peek(0x19d88bd0, 0x1)
+	bufio/bufio.go:139 +0x6d
+net/http.(*persistConn).readLoop(0x19e5a780)
+	net/http/transport.go:2087 +0x18a
+created by net/http.(*Transport).dialConn
+	net/http/transport.go:1747 +0x1a18
+
+goroutine 6692 [select]:
+database/sql.(*DB).connectionOpener(0x198d9680, {0x2c70064, 0x19c88900})
+	database/sql/sql.go:1196 +0xab
+created by database/sql.OpenDB
+	database/sql/sql.go:794 +0x13d
+eax     0x0
+ebx     0x0
+ecx     0x1ec4a0
+edx     0x0
+edi     0x1ec4a4
+esi     0x0
+ebp     0x379bfd08
+esp     0x379bfce0
+eip     0x188aded
+eflags  0x10202
+cs      0x23
+fs      0x53
+gs      0x2b
